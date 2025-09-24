@@ -1,0 +1,251 @@
+﻿<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="row m-0 p-0" style="width: 175px !important;">
+                <div class="col-12 m-0 p-0">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="~/images/logo.png" style="height: 50px" />
+                        <span class="highlight">Indian</span>Music<span class="highlight">...</span>
+                    </a>
+                </div>
+                <div class="col-12 m-0 p-0">
+                    @await Html.PartialAsync("_LanguageSelector")
+                </div>
+            </div>
+            
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Menu - 1 : Classical Music-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Classical Music
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+
+                            <!-- Submenu -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Hindusthani Classical</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-area='' asp-controller='HindustaniClassical' asp-action='Artists'>Artists</a> </li>
+                                    <li class="dropdown-menu-divider" />
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Classical' asp-action='Thats'>Thats</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Classical' asp-action='Ragas'>Ragas</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Classical' asp-action='Talas'>Talas</a></li>
+
+                                    <li class="dropdown-menu-divider" />
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Classical' asp-action='Instumentals'>Instumentals</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Classical' asp-action='Compositions' title="Khayals, Dhurpads, etc.">Compositions</a></li>
+
+                                    <!-- Sub-Submenu 
+                                    <li class="dropdown-submenu d-none">
+                                        <a class="dropdown-item dropdown-toggle" href="#">More Options</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Top Artists</a></li>
+                                            <li><a class="dropdown-item" href="#">Upcoming</a></li>
+                                        </ul>
+                                    </li>
+                                    -->
+                                </ul>
+                            </li>
+
+                            <!-- Another Submenu -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Cartnatic Classical</a>
+                                <ul class="dropdown-menu">
+
+                                    <li><a class="dropdown-item" href="#">Add Raaga</a></li>
+                                    <li><a class="dropdown-item" href="#">View Raagas</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Another Submenu -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Odissi Classical</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Add Raaga</a></li>
+                                    <li><a class="dropdown-item" href="#">View Raagas</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    
+                    <!-- Menu - 2 : Folk Music-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Folk Music
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+
+                            <!-- Submenu -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Odisha </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Odisha'>Prahallada Nataka</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Odisha'>Radha Prema Leela</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Odisha'>Bharata Leela</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Odisha'>Ghoda Nacha</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Odisha'>Pasu Mukha Nacha</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Another Submenu -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Bengal</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Bengal'>Bengal Folk - 41</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Bengal'>Bengal Folk - 42</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Another Submenu -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Assam</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Assam'>Assam Folk - 44</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Assam'>Assam Folk - 45</a></li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <!-- Menu - 3 : Film-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Film
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <li><a class='dropdown-item' asp-area='' asp-controller='Film' asp-action='Bollywood'>Bollywood (Hindi)</a></li>
+                            <li><a class='dropdown-item' asp-area='' asp-controller='Film' asp-action='Ollywood'>Ollywood (Odia)</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Menu - 4 : Instruments-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Instruments
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+
+                            <!-- Submenu -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Wind Instruments</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Bansuri (Flute)</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Shehnai</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Saxopnone</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Mukhabina</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Nada Venu</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Trumpet</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Mouth Organ</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Another Submenu -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">String Instrument</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Sitar</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Violine</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Sarod</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Guitar</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Tanpura</a></li>
+
+                                </ul>
+                            </li>
+
+                            <!-- Another Submenu -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Percussion Instruments</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Tabla</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Pakhawuj</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Mardhal</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Dhola</a></li>
+                                    <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>Drum</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <!-- Menu - 5 : Artists-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Artists
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Vocalist</a></li>
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Instrumentalist</a></li>
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Composer</a></li>
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Lyricists</a></li>
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Folk Legends</a></li>
+
+                        </ul>
+                    </li>
+
+                    <!-- Menu - 5 : Learn-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Learn
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Music Theory</a></li>
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Ragas & Talas</a></li>
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Tutorials & Lessions</a></li>
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Glossary</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Menu - 6 : Learn-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Community
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Blogs</a></li>
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Submit Music</a></li>
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Event & Gigs</a></li>
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Interviews</a></li>
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Forum / Discussion</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Menu - 6 : About-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>About us</a></li>
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Contact</a></li>
+                            <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Contributors</a></li>
+                            @* <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>Credits</a></li> *@
+                        </ul>
+                    </li>
+
+                    <li class="nav-item d-none">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex d-none">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <partial name="_LoginPartial" />
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="themeToggleBtn">
+                    <label class="form-check-label" for="themeToggleBtn">Dark</label>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+@await Component.InvokeAsync("SearchBar")

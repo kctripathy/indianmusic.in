@@ -1,0 +1,59 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using IndianMusic.WebApp.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<ul class="navbar-nav ms-auto">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        var currentUser = await UserManager.GetUserAsync(User);
+        var roles = await UserManager.GetRolesAsync(currentUser);
+
+        <li class="nav-item dropdown">
+            @* <span class="nav-link">Hello, @currentUser.DisplayName!</span> *@
+            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Hello, @currentUser.DisplayName!
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                @if (roles.Contains("Admin"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area='Admin' asp-controller="Admin" asp-action="Dashboard">Dashboard</a>
+                    </li>
+                }
+                else if (roles.Contains("Contributor"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area='Contributor' asp-controller="Contributor" asp-action="Dashboard">Dashboard</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="User" asp-action="Dashboard">Dashboard</a>
+                    </li>
+                }
+                <li><a class='dropdown-item' asp-area='User' asp-controller='User' asp-action='SubmitMusic'>Submit Music</a></li>
+                <li class="nav-item">
+                    <form class="d-inline" asp-controller="Account" asp-action="Logout" method="post">
+                        <button type="submit" class="nav-link btn btn-link">Logout</button>
+                    </form>
+                </li>
+            </ul>
+        </li>
+
+        @* Admin Dashboard link *@
+        
+
+        
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link" asp-controller="Account" asp-action="Login">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-controller="Account" asp-action="Register">Register</a>
+        </li>
+    }
+</ul>

@@ -1,0 +1,37 @@
+﻿@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Labels> Localizer
+
+@{
+    ViewData["Title"] = "Indian Music - Home";
+     var feature = Context.Features.Get<IRequestCultureFeature>();
+     var culture = feature?.RequestCulture.UICulture.Name;
+}
+
+<div class="text-left m-1 p-1 row">
+    <div class="col-lg-11"><h1>@Localizer["01_Header"]</h1></div>
+    <div class="col-lg-1"></div>
+</div>
+<div class="text-left m-1 p-1 row">
+    <h4>@Localizer["02_SubHeader"]</h4>
+</div>
+<div class="container">
+    @* <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-1"> *@
+    <div class="row g-1">
+        <div class="col-lg-3">
+            @await Component.InvokeAsync("ArtistOfTheDay")
+        </div>
+        <div class="col-lg-4">
+            <quotes-carousel interval="15000"></quotes-carousel>
+        </div>
+        <div class="col-lg-5">
+            @await Component.InvokeAsync("MusicOfTheDay")
+        </div>
+    </div>
+    @* <div class="row">
+        <div class="col-12">
+            @await Component.InvokeAsync("SearchBar")
+        </div>
+    </div> *@
+</div>

@@ -1,0 +1,29 @@
+﻿@model IEnumerable<IndianMusic.Domain.ViewModels.SearchResult>
+<div class="row m-1 p-1">
+    <div class="col-lg-12">
+        <b>Search Result:</b> for '@ViewBag.QueryText' in '@ViewBag.SelectedCategories'
+    </div>
+    <div class="col-lg-12">
+        <table class="table table-responsive table-striped">
+            <thead>
+                <tr>
+                    <td>Result</td>
+                    <td>Description</td>
+                    <td>Details</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var result in Model)
+                {
+                    <tr>
+                        <td>@result.Title</td>
+                        <td>@result.Description</td>
+                        <td>@result.LinkURL</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+          

@@ -1,0 +1,164 @@
+﻿@using Microsoft.AspNetCore.Http.Extensions
+@using Microsoft.AspNetCore.Localization
+
+@{
+    var requestCultureFeature = Context.Features.Get<IRequestCultureFeature>();
+    var currentCulture = requestCultureFeature?.RequestCulture.UICulture.Name ?? "en";
+
+    var returnUrl = Context.Request.GetEncodedPathAndQuery();
+
+    var languages = new List<(string Code, string Name)>
+    {
+        ("en", "English"),
+        ("hi", "हिन्दी"),
+        ("or", "ଓଡ଼ିଆ")
+    };
+
+    var currentLang = languages.FirstOrDefault(l => l.Code == currentCulture);
+    currentLang = currentLang.Code != null ? currentLang : languages[0];
+}
+
+<style>
+    .custom-dropdown {
+        border: none !important;
+        height: 25px !important;
+        line-height: 25px !important;
+        padding: 0 12px !important; /* Adjust horizontal padding as needed */
+        margin-top: -20px !important;
+    }
+</style>
+
+<div class="dropdown row m-0 p-0">
+    <a id="dropdownMenuButton" class="btn dropdown-toggle custom-dropdown btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+        @currentLang.Name
+    </a>
+    <ul class="dropdown-menu">
+        @foreach (var lang in languages)
+        {
+            <li>
+                <form asp-controller="Language" asp-action="SetLanguage" method="post" class="d-inline">
+                    <input type="hidden" name="culture" value="@lang.Code" />
+                    <input type="hidden" name="returnUrl" value="@returnUrl" />
+                    <button type="submit" style="text-align: right;" class="dropdown-item @(lang.Code == currentCulture ? "active" : "")">
+                        @lang.Name
+                    </button>
+                </form>
+            </li>
+        }
+    </ul>
+</div>
+
+
+@* 
+    <!-- Dropdown button -->
+<div class="dropdown">
+  <button
+    class="btn dropdown-toggle custom-dropdown"
+    type="button"
+    id="dropdownMenuButton"
+    data-bs-toggle="dropdown"
+    aria-expanded="false">
+    Dropdown
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+
+<style>
+  .custom-dropdown {
+    border: none !important;
+    height: 25px !important;
+    line-height: 25px !important;
+    padding: 0 12px !important; /* Adjust horizontal padding as needed */
+  }
+
+  /* Optional: remove focus outline */
+  .custom-dropdown:focus {
+    box-shadow: none !important;
+  }
+</style>
+
+
+
+
+@using Microsoft.AspNetCore.Http.Extensions
+@using Microsoft.AspNetCore.Localization
+
+@{
+    // Get current culture
+    var requestCultureFeature = Context.Features.Get<IRequestCultureFeature>();
+    var currentCulture = requestCultureFeature?.RequestCulture.UICulture.Name ?? "en";
+
+    // Return URL for form post
+    var returnUrl = Context.Request.GetEncodedPathAndQuery();
+
+    // Define supported languages: Code + Display Name
+    var languages = new List<(string Code, string Name)>
+    {
+        ("en", "English"),
+        ("hi", "हिन्दी"),
+        ("or", "ଓଡ଼ିଆ")
+    };
+
+    var currentLang = languages.FirstOrDefault(l => l.Code == currentCulture);
+    currentLang = currentLang.Code != null ? currentLang : languages[0];
+}
+
+<div class="dropdown">
+    <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        @currentLang.Name
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+        @foreach (var lang in languages)
+        {
+            <li>
+                <form asp-controller="Language" asp-action="SetLanguage" method="post" class="d-inline">
+                    <input type="hidden" name="culture" value="@lang.Code" />
+                    <input type="hidden" name="returnUrl" value="@returnUrl" />
+                    <button type="submit" class="dropdown-item @(lang.Code == currentCulture ? "active" : "")">
+                        @lang.Name
+                    </button>
+                </form>
+            </li>
+        }
+    </ul>
+</div> *@
+
+@*@using Microsoft.AspNetCore.Http.Extensions
+@inject Microsoft.AspNetCore.Localization.IRequestCultureFeature requestCulture
+
+@{
+    var currentCulture = requestCulture.RequestCulture.UICulture.Name;
+    var returnUrl = Context.Request.GetEncodedPathAndQuery();
+}
+
+<form asp-controller="Language" asp-action="SetLanguage" method="post" class="d-inline">
+    <input type="hidden" name="returnUrl" value="@returnUrl" />
+
+    <select name="culture" onchange="this.form.submit()" class="form-select form-select-sm w-auto d-inline">
+        <option value="en" selected="@(currentCulture == "en")">English</option>
+        <option value="hi" selected="@(currentCulture == "hi")">हिन्दी</option>
+        <option value="or" selected="@(currentCulture == "or")">ଓଡ଼ିଆ</option>
+    </select>
+</form>
+
+
+ @using Microsoft.AspNetCore.Http.Extensions
+
+@{
+    var returnUrl = Context.Request.GetEncodedPathAndQuery();
+}
+
+<form asp-controller="Language" asp-action="SetLanguage" method="post" class="d-inline">
+    <input type="hidden" name="returnUrl" value="@returnUrl" />
+
+    <select name="culture"
+            asp-items="ViewBag.Cultures"
+            onchange="this.form.submit()"
+            class="form-select form-select-sm w-auto d-inline">
+    </select>
+</form>
+ *@

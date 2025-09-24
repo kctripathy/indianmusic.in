@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--Auto-generated resource file-->
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="WelcomeMessage" xml:space="preserve">
+    <value>स्वागत</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>साइन इन</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>लॉग आउट</value>
+  </data>
+  <data name="Sangeet" xml:space="preserve">
+    <value>संगीत</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>लॉग इन</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>पंजीकरण</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>नमस्ते</value>
+  </data>
+</root>
