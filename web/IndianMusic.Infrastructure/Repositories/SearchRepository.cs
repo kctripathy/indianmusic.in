@@ -1,5 +1,4 @@
-﻿using IndianMusic.Domain.Data;
-using IndianMusic.Domain.Models;
+﻿using IndianMusic.Domain.Models;
 using IndianMusic.Domain.ViewModels;
 using IndianMusic.Infrastructure.Interfaces;
 using Microsoft.EntityFrameworkCore;

@@ -1,0 +1,41 @@
+INSERT INTO Artists ([Name], [ShortDesc], BirthDate, DeathDate, PhotoURL) VALUES
+(N'Pt. Ravi Shankar', N'Sitar maestro and composer', '1920-04-07', '1980-04-07','http://indianmusic.com/images/artist/ravi.jpg'),
+
+INSERT INTO Thatas ([Name], [Description],[Aroh],[Avroh]) VALUES
+(N'Bilawal', N'Equivalent of Ionian scale (Major)')
+
+
+INSERT INTO Talas ([Name], [Beats],[Talis],[Khalis],[Bol]) VALUES
+(N'Teen Taal', 16,N'1,5,13',N'9', N'Dha Dhin Dhin Dha | Dha Dhin Dhi Dha | Na Tin Tin Ta | TiTa Dhin Dhi Dha')
+
+INSERT INTO Movies ([Name], [Description],[ReleaseYear]) VALUES
+(N'Teen Taal', 16,N'1,5,13',N'9', N'Dha Dhin Dhin Dha | Dha Dhin Dhi Dha | Na Tin Tin Ta | TiTa Dhin Dhi Dha')
+
+INSERT INTO MusicPieces ([Title], [Description],[MovieID]) VALUES
+INSERT INTO MusicPieces ([Title], [Description],[RagaID]) VALUES
+
+CREATE TABLE MusicPieces (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    Title NVARCHAR(200) NOT NULL,
+    Description NVARCHAR(MAX)  NULL,
+    CategoryID INT NULL,
+    ArtistID INT  NULL,
+    RegionID INT  NULL,
+    InstrumentID INT  NULL,
+	MovieID INT NULL,
+	
+	
+CREATE TABLE Movies (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    [Name] NVARCHAR(100) NOT NULL,
+    Description NVARCHAR(MAX),
+	ReleaseYear VARCHAR(4),
+	
+	
+CREATE TABLE Talas (
+    ID INT PRIMARY KEY IDENTITY(1,1),
+    [Name] NVARCHAR(100) NOT NULL,
+	Beats INT NOT NULL,
+	Talis NVARCHAR(20) NOT NULL,
+	Khalis NVARCHAR(20) NULL,
+	Bol NVARCHAR(1500) NULL,

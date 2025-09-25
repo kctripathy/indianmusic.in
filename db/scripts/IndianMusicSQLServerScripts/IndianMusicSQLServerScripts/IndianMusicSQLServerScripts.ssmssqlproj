@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="IndianMusicSQLServerScripts">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="SUVRAM\SQLEXPRESS_2022:sa">
+          <Created>2025-09-25T11:17:15.5712475+05:30</Created>
+          <Type>SQL</Type>
+          <Server>SUVRAM\SQLEXPRESS_2022</Server>
+          <UserName>sa</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="001_create_db_n_tables.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SUVRAM\SQLEXPRESS_2022:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>001_create_db_n_tables.sql</FullPath>
+        </FileNode>
+        <FileNode Name="002_2_seeding-data-categories.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SUVRAM\SQLEXPRESS_2022:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>002_2_seeding-data-categories.sql</FullPath>
+        </FileNode>
+        <FileNode Name="002_3-seeding-artists.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SUVRAM\SQLEXPRESS_2022:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>002_3-seeding-artists.sql</FullPath>
+        </FileNode>
+        <FileNode Name="002_4-thaat-raag-taal.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SUVRAM\SQLEXPRESS_2022:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>002_4-thaat-raag-taal.sql</FullPath>
+        </FileNode>
+        <FileNode Name="002_5_tala.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SUVRAM\SQLEXPRESS_2022:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>002_5_tala.sql</FullPath>
+        </FileNode>
+        <FileNode Name="002_6_movies.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SUVRAM\SQLEXPRESS_2022:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>002_6_movies.sql</FullPath>
+        </FileNode>
+        <FileNode Name="002_888_seeding-data.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SUVRAM\SQLEXPRESS_2022:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>002_888_seeding-data.sql</FullPath>
+        </FileNode>
+        <FileNode Name="003_create_views.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SUVRAM\SQLEXPRESS_2022:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>003_create_views.sql</FullPath>
+        </FileNode>
+        <FileNode Name="099_truncate_data.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SUVRAM\SQLEXPRESS_2022:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>099_truncate_data.sql</FullPath>
+        </FileNode>
+        <FileNode Name="get-all-categories.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SUVRAM\SQLEXPRESS_2022:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>get-all-categories.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SUVRAM\SQLEXPRESS_2022:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>SQLQuery2.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

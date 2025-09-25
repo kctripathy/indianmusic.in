@@ -13,11 +13,9 @@ namespace ResxUpdater
         {
             Console.WriteLine("=== RESX Updater from Excel ===");
 
-            //string excelPath = @"C:\Temp\Localization.xlsx"; // path to Excel
-            //string resxFolder = @"C:\Projects\MyApp\Resources"; // path to Resources folder
             string resourceFileName = @"MenuItems";
-            string excelPath = @"P:\musicz\Documents\Localization.xlsx"; // path to your Excel
-            string resxFolder = @"P:\musicz\WebApp\IndianMusicz\Resources"; // path to your MVC Resources folder
+            string excelPath = @"P:\indianmusic.in\documents\Localization.xlsx"; // path to your Excel
+            string resxFolder = @"P:\indianmusic.in\web\IndianMusic.WebApp\Resources"; // path to your MVC Resources folder
 
             if (!File.Exists(excelPath))
             {

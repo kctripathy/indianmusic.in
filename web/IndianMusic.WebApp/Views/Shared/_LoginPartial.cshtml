@@ -1,7 +1,11 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using IndianMusic.WebApp.Models
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
+@inject Microsoft.Extensions.Localization.IStringLocalizer<MenuItems> Localizer
 
 <ul class="navbar-nav ms-auto">
     @if (SignInManager.IsSignedIn(User))
@@ -12,7 +16,7 @@
         <li class="nav-item dropdown">
             @* <span class="nav-link">Hello, @currentUser.DisplayName!</span> *@
             <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Hello, @currentUser.DisplayName!
+                @Localizer["Hello"], @currentUser.DisplayName!
             </a>
             <ul class="dropdown-menu" aria-labelledby="menuDropdown">
                 @if (roles.Contains("Admin"))
@@ -36,7 +40,7 @@
                 <li><a class='dropdown-item' asp-area='User' asp-controller='User' asp-action='SubmitMusic'>Submit Music</a></li>
                 <li class="nav-item">
                     <form class="d-inline" asp-controller="Account" asp-action="Logout" method="post">
-                        <button type="submit" class="nav-link btn btn-link">Logout</button>
+                        <button type="submit" class="nav-link btn btn-link">@Localizer["Logout"]</button>
                     </form>
                 </li>
             </ul>
@@ -50,10 +54,10 @@
     else
     {
         <li class="nav-item">
-            <a class="nav-link" asp-controller="Account" asp-action="Login">Login</a>
+            <a class="nav-link" asp-controller="Account" asp-action="Login">@Localizer["Login"]</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" asp-controller="Account" asp-action="Register">Register</a>
+            <a class="nav-link" asp-controller="Account" asp-action="Register">@Localizer["Register"]</a>
         </li>
     }
 </ul>

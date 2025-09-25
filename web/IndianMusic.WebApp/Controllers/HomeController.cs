@@ -1,4 +1,4 @@
-using IndianMusic.Domain.Data;
+using IndianMusic.Domain.Models;
 using IndianMusic.WebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OutputCaching;

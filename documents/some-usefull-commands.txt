@@ -1,0 +1,16 @@
+Scaffold-DbContext "Server=.\SQLEXPRESS_2022;Database=IndianMusic;User Id=sa;Password=maa@1234;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context MusicDbContext -DataAnnotations
+
+
+dotnet ef dbcontext scaffold "Server=.\SQLEXPRESS_2022;Database=IndianMusic;User Id=sa;Password=maa@1234;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context IndianMusicDbContext --data-annotations --force
+
+Explanation of Parameters:
+
+"Server=.;Database=YourDatabaseName;Trusted_Connection=True;" → Your connection string
+
+Microsoft.EntityFrameworkCore.SqlServer → Provider
+--table Artists → Scaffold only the Artists table
+--output-dir Models → Directory where entity class will be created
+--context MusicDbContext → Name of the generated DbContext
+--data-annotations → Use attributes instead of Fluent API (optional)
+--force → Overwrite existing files if needed
+

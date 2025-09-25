@@ -138,4 +138,229 @@
   <data name="Hello" xml:space="preserve">
     <value>Hello</value>
   </data>
+  <data name="Menu_Classical_Music" xml:space="preserve">
+    <value>Classical Music</value>
+  </data>
+  <data name="Menu_Hindustani_Classical" xml:space="preserve">
+    <value>Hindustani Classical</value>
+  </data>
+  <data name="Menu_Artists" xml:space="preserve">
+    <value>Artists</value>
+  </data>
+  <data name="Menu_Thats" xml:space="preserve">
+    <value>Thats</value>
+  </data>
+  <data name="Menu_Ragas" xml:space="preserve">
+    <value>Ragas</value>
+  </data>
+  <data name="Menu_Talas" xml:space="preserve">
+    <value>Talas</value>
+  </data>
+  <data name="Menu_Instumentals" xml:space="preserve">
+    <value>Instumentals</value>
+  </data>
+  <data name="Menu_Compositions" xml:space="preserve">
+    <value>Compositions</value>
+  </data>
+  <data name="Menu_Carnatic" xml:space="preserve">
+    <value>Carnatic</value>
+  </data>
+  <data name="Menu_Artists" xml:space="preserve">
+    <value>Artists</value>
+  </data>
+  <data name="Menu_Melas" xml:space="preserve">
+    <value>Melas</value>
+  </data>
+  <data name="Menu_Odissi" xml:space="preserve">
+    <value>Odissi</value>
+  </data>
+  <data name="Menu_Champus" xml:space="preserve">
+    <value>Champus</value>
+  </data>
+  <data name="Menu_Chhandas" xml:space="preserve">
+    <value>Chhandas</value>
+  </data>
+  <data name="Menu_Folk_Music" xml:space="preserve">
+    <value>Folk Music</value>
+  </data>
+  <data name="Menu_Odisha" xml:space="preserve">
+    <value>Odisha</value>
+  </data>
+  <data name="Menu_Prahallada_Nataka" xml:space="preserve">
+    <value>Prahallada Nataka</value>
+  </data>
+  <data name="Menu_Radha_Prema_Leela" xml:space="preserve">
+    <value>Radha Prema Leela</value>
+  </data>
+  <data name="Menu_Bharata_Leela" xml:space="preserve">
+    <value>Bharata Leela</value>
+  </data>
+  <data name="Menu_Ghoda_Nacha" xml:space="preserve">
+    <value>Ghoda Nacha</value>
+  </data>
+  <data name="Menu_Pasu_Mukha_Nacha" xml:space="preserve">
+    <value>Pasu Mukha Nacha</value>
+  </data>
+  <data name="Menu_Bengal" xml:space="preserve">
+    <value>Bengal</value>
+  </data>
+  <data name="Menu_Assam" xml:space="preserve">
+    <value>Assam</value>
+  </data>
+  <data name="Menu_Film_Music" xml:space="preserve">
+    <value>Film Music</value>
+  </data>
+  <data name="Menu_Bollywood" xml:space="preserve">
+    <value>Bollywood</value>
+  </data>
+  <data name="Menu_Ollywood" xml:space="preserve">
+    <value>Ollywood</value>
+  </data>
+  <data name="Menu_Gujrathi" xml:space="preserve">
+    <value>Gujrathi</value>
+  </data>
+  <data name="Menu_Kannada" xml:space="preserve">
+    <value>Kannada</value>
+  </data>
+  <data name="Menu_Bengali" xml:space="preserve">
+    <value>Bengali</value>
+  </data>
+  <data name="Menu_Marathi" xml:space="preserve">
+    <value>Marathi</value>
+  </data>
+  <data name="Menu_Assamee" xml:space="preserve">
+    <value>Assamee</value>
+  </data>
+  <data name="Menu_Telugu" xml:space="preserve">
+    <value>Telugu</value>
+  </data>
+  <data name="Menu_Tamil" xml:space="preserve">
+    <value>Tamil</value>
+  </data>
+  <data name="Menu_Instruments" xml:space="preserve">
+    <value>Instruments</value>
+  </data>
+  <data name="Menu_Wind_Instrument" xml:space="preserve">
+    <value>Wind Instrument</value>
+  </data>
+  <data name="Menu_Flute" xml:space="preserve">
+    <value>Flute</value>
+  </data>
+  <data name="Menu_Shehnai" xml:space="preserve">
+    <value>Shehnai</value>
+  </data>
+  <data name="Menu_Saxopnone" xml:space="preserve">
+    <value>Saxopnone</value>
+  </data>
+  <data name="Menu_Mukhabina" xml:space="preserve">
+    <value>Mukhabina</value>
+  </data>
+  <data name="Menu_Nada_Venu" xml:space="preserve">
+    <value>Nada Venu</value>
+  </data>
+  <data name="Menu_Trumpet" xml:space="preserve">
+    <value>Trumpet</value>
+  </data>
+  <data name="Menu_Mouth_Organ" xml:space="preserve">
+    <value>Mouth Organ</value>
+  </data>
+  <data name="Menu_String_Instrument" xml:space="preserve">
+    <value>String Instrument</value>
+  </data>
+  <data name="Menu_Sitar" xml:space="preserve">
+    <value>Sitar</value>
+  </data>
+  <data name="Menu_Violine" xml:space="preserve">
+    <value>Violine</value>
+  </data>
+  <data name="Menu_Sarod" xml:space="preserve">
+    <value>Sarod</value>
+  </data>
+  <data name="Menu_Guitar" xml:space="preserve">
+    <value>Guitar</value>
+  </data>
+  <data name="Menu_Tanpura" xml:space="preserve">
+    <value>Tanpura</value>
+  </data>
+  <data name="Menu_Percussion_Instruments" xml:space="preserve">
+    <value>Percussion Instruments</value>
+  </data>
+  <data name="Menu_Tabla" xml:space="preserve">
+    <value>Tabla</value>
+  </data>
+  <data name="Menu_Drum" xml:space="preserve">
+    <value>Drum</value>
+  </data>
+  <data name="Menu_Mardhal" xml:space="preserve">
+    <value>Mardhal</value>
+  </data>
+  <data name="Menu_Pakhawuj" xml:space="preserve">
+    <value>Pakhawuj</value>
+  </data>
+  <data name="Menu_Artists__Legends" xml:space="preserve">
+    <value>Artists &amp; Legends</value>
+  </data>
+  <data name="Menu_Vocalist" xml:space="preserve">
+    <value>Vocalist</value>
+  </data>
+  <data name="Menu_Instrumentalist" xml:space="preserve">
+    <value>Instrumentalist</value>
+  </data>
+  <data name="Menu_Composer" xml:space="preserve">
+    <value>Composer</value>
+  </data>
+  <data name="Menu_Lyricists" xml:space="preserve">
+    <value>Lyricists</value>
+  </data>
+  <data name="Menu_Folk_Legends" xml:space="preserve">
+    <value>Folk Legends</value>
+  </data>
+  <data name="Menu_Learn__Explore" xml:space="preserve">
+    <value>Learn &amp; Explore</value>
+  </data>
+  <data name="Menu_Music_Theory" xml:space="preserve">
+    <value>Music Theory</value>
+  </data>
+  <data name="Menu_Ragas__Talas" xml:space="preserve">
+    <value>Ragas &amp; Talas</value>
+  </data>
+  <data name="Menu_Tutorials__Lessions" xml:space="preserve">
+    <value>Tutorials &amp; Lessions</value>
+  </data>
+  <data name="Menu_Glossary" xml:space="preserve">
+    <value>Glossary</value>
+  </data>
+  <data name="Menu_Community" xml:space="preserve">
+    <value>Community</value>
+  </data>
+  <data name="Menu_Blogs" xml:space="preserve">
+    <value>Blogs</value>
+  </data>
+  <data name="Menu_Submit_Music" xml:space="preserve">
+    <value>Submit Music</value>
+  </data>
+  <data name="Menu_Event__Gigs" xml:space="preserve">
+    <value>Event &amp; Gigs</value>
+  </data>
+  <data name="Menu_Interviews" xml:space="preserve">
+    <value>Interviews</value>
+  </data>
+  <data name="Menu_Forum_or_Discussion" xml:space="preserve">
+    <value>Forum or Discussion</value>
+  </data>
+  <data name="Menu_About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Menu_About_us" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="Menu_Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Menu_Contributors" xml:space="preserve">
+    <value>Contributors</value>
+  </data>
+  <data name="Menu_Credits" xml:space="preserve">
+    <value>Credits</value>
+  </data>
 </root>

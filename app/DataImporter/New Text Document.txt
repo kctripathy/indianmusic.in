@@ -1,0 +1,213 @@
+
+dotnet new console -n ReadExcelWriteSQL
+
+// To run this application, you need to first create a new .NET 8 Console App project.
+// You must then install the following NuGet packages:
+// 1. Microsoft.Data.SqlClient
+// 2. EPPlus
+// 3. CsvHelper
+//
+// You can install them using the following commands in the terminal:
+// dotnet add package Microsoft.Data.SqlClient
+// dotnet add package EPPlus
+// dotnet add package CsvHelper
+
+using CsvHelper;
+using CsvHelper.Configuration;
+using Microsoft.Data.SqlClient;
+using OfficeOpenXml;
+using System.Data;
+using System.Globalization;
+using System.Text;
+
+// Set the license context for EPPlus.
+// You can set this to commercial or free.
+// For the purpose of this example, we'll use the non-commercial license.
+ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
+// Define a simple class to represent the data to be read.
+// This should match the columns in your Excel/CSV file and your SQL Server table.
+public class MyDataRow
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public decimal Value { get; set; }
+    public DateTime CreatedDate { get; set; }
+}
+
+public class Program
+{
+    // === CONFIGURATION ===
+    // IMPORTANT: Update these values to match your environment.
+
+    // Your SQL Server connection string.
+    private const string ConnectionString = "Server=myServerName;Database=myDataBase;User Id=myUsername;Password=myPassword;TrustServerCertificate=True;";
+
+    // The name of your target SQL Server table.
+    private const string TargetTableName = "MyDataTable";
+
+    // File paths for your Excel and CSV files.
+    private const string ExcelFilePath = "C:\\path\\to\\your\\data.xlsx";
+    private const string CsvFilePath = "C:\\path\\to\\your\\data.csv";
+
+    public static async Task Main(string[] args)
+    {
+        Console.WriteLine("Data Importer Console Application");
+        Console.WriteLine("=================================");
+        Console.WriteLine("Select file type to import:");
+        Console.WriteLine("1. Excel (.xlsx)");
+        Console.WriteLine("2. CSV (.csv)");
+        Console.Write("Enter your choice (1 or 2): ");
+        string choice = Console.ReadLine();
+
+        try
+        {
+            DataTable dataTable = null;
+
+            if (choice == "1")
+            {
+                Console.WriteLine($"Reading data from Excel file: {ExcelFilePath}");
+                dataTable = ReadExcelData(ExcelFilePath);
+            }
+            else if (choice == "2")
+            {
+                Console.WriteLine($"Reading data from CSV file: {CsvFilePath}");
+                dataTable = ReadCsvData(CsvFilePath);
+            }
+            else
+            {
+                Console.WriteLine("Invalid choice. Please run the application again and enter 1 or 2.");
+                return;
+            }
+
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                Console.WriteLine($"Found {dataTable.Rows.Count} rows to import.");
+                await BulkInsertData(dataTable);
+                Console.WriteLine("Import completed successfully!");
+            }
+            else
+            {
+                Console.WriteLine("No data found in the specified file.");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("\nAn error occurred during the import process:");
+            Console.WriteLine(ex.Message);
+            Console.ResetColor();
+        }
+
+        Console.WriteLine("\nPress any key to exit.");
+        Console.ReadKey();
+    }
+
+    /// <summary>
+    /// Reads data from an Excel file into a DataTable.
+    /// Assumes the first row contains column headers.
+    /// </summary>
+    /// <param name="filePath">The path to the Excel file.</param>
+    /// <returns>A DataTable containing the data.</returns>
+    private static DataTable ReadExcelData(string filePath)
+    {
+        var dataTable = new DataTable();
+        var fileInfo = new FileInfo(filePath);
+
+        using (var package = new ExcelPackage(fileInfo))
+        {
+            var worksheet = package.Workbook.Worksheets.FirstOrDefault();
+            if (worksheet == null)
+            {
+                throw new InvalidOperationException("No worksheet found in the Excel file.");
+            }
+
+            // Read the column headers from the first row.
+            foreach (var firstRowCell in worksheet.Cells[1, 1, 1, worksheet.Dimension.End.Column])
+            {
+                dataTable.Columns.Add(firstRowCell.Text.Trim());
+            }
+
+            // Read the data from the second row onwards.
+            for (int rowNumber = 2; rowNumber <= worksheet.Dimension.End.Row; rowNumber++)
+            {
+                var row = worksheet.Cells[rowNumber, 1, rowNumber, worksheet.Dimension.End.Column];
+                var newRow = dataTable.Rows.Add();
+                for (int i = 0; i < row.Count(); i++)
+                {
+                    newRow[i] = row.ElementAt(i).Text;
+                }
+            }
+        }
+
+        return dataTable;
+    }
+
+    /// <summary>
+    /// Reads data from a CSV file into a DataTable.
+    /// Assumes the first row contains column headers.
+    /// </summary>
+    /// <param name="filePath">The path to the CSV file.</param>
+    /// <returns>A DataTable containing the data.</returns>
+    private static DataTable ReadCsvData(string filePath)
+    {
+        var dataTable = new DataTable();
+        var config = new CsvConfiguration(CultureInfo.InvariantCulture)
+        {
+            HasHeaderRecord = true, // Assumes the first row is a header.
+        };
+
+        using (var reader = new StreamReader(filePath, Encoding.UTF8))
+        using (var csv = new CsvReader(reader, config))
+        {
+            // Read headers
+            csv.Read();
+            csv.ReadHeader();
+            foreach (var header in csv.HeaderRecord)
+            {
+                dataTable.Columns.Add(header.Trim());
+            }
+
+            // Read data
+            while (csv.Read())
+            {
+                var newRow = dataTable.NewRow();
+                foreach (DataColumn column in dataTable.Columns)
+                {
+                    newRow[column.ColumnName] = csv.GetField(column.ColumnName);
+                }
+                dataTable.Rows.Add(newRow);
+            }
+        }
+
+        return dataTable;
+    }
+
+    /// <summary>
+    /// Inserts data from a DataTable into a SQL Server table using SqlBulkCopy.
+    /// </summary>
+    /// <param name="dataTable">The DataTable containing the data to insert.</param>
+    private static async Task BulkInsertData(DataTable dataTable)
+    {
+        using (var connection = new SqlConnection(ConnectionString))
+        {
+            await connection.OpenAsync();
+
+            using (var bulkCopy = new SqlBulkCopy(connection))
+            {
+                bulkCopy.DestinationTableName = TargetTableName;
+
+                // Map columns from your DataTable to the destination table columns.
+                // IMPORTANT: Ensure the source and destination column names match or
+                // create explicit mappings. This example assumes they match.
+                foreach (DataColumn column in dataTable.Columns)
+                {
+                    bulkCopy.ColumnMappings.Add(column.ColumnName, column.ColumnName);
+                }
+
+                Console.WriteLine("Starting bulk insert...");
+                await bulkCopy.WriteToServerAsync(dataTable);
+            }
+        }
+    }
+}

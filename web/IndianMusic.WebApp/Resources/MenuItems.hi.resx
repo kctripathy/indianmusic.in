@@ -34,4 +34,229 @@
   <data name="Hello" xml:space="preserve">
     <value>नमस्ते</value>
   </data>
+  <data name="Menu_Classical_Music" xml:space="preserve">
+    <value>शास्त्रीय संगीत</value>
+  </data>
+  <data name="Menu_Hindustani_Classical" xml:space="preserve">
+    <value>हिंदुस्तानी शास्त्रीय</value>
+  </data>
+  <data name="Menu_Artists" xml:space="preserve">
+    <value>कलाकार</value>
+  </data>
+  <data name="Menu_Thats" xml:space="preserve">
+    <value>थाटा</value>
+  </data>
+  <data name="Menu_Ragas" xml:space="preserve">
+    <value>राग</value>
+  </data>
+  <data name="Menu_Talas" xml:space="preserve">
+    <value>ताल</value>
+  </data>
+  <data name="Menu_Instumentals" xml:space="preserve">
+    <value>वाद्ययंत्र</value>
+  </data>
+  <data name="Menu_Compositions" xml:space="preserve">
+    <value>रचनाएँ (ख्याल, ध्रुपद, आदि)</value>
+  </data>
+  <data name="Menu_Carnatic" xml:space="preserve">
+    <value>कर्नाटक</value>
+  </data>
+  <data name="Menu_Artists" xml:space="preserve">
+    <value>कलाकार</value>
+  </data>
+  <data name="Menu_Melas" xml:space="preserve">
+    <value>मेलों</value>
+  </data>
+  <data name="Menu_Odissi" xml:space="preserve">
+    <value>ओडिसी</value>
+  </data>
+  <data name="Menu_Champus" xml:space="preserve">
+    <value>चैम्पस</value>
+  </data>
+  <data name="Menu_Chhandas" xml:space="preserve">
+    <value>छान्द </value>
+  </data>
+  <data name="Menu_Folk_Music" xml:space="preserve">
+    <value>लोक संगीत</value>
+  </data>
+  <data name="Menu_Odisha" xml:space="preserve">
+    <value>ओडिशा</value>
+  </data>
+  <data name="Menu_Prahallada_Nataka" xml:space="preserve">
+    <value>प्रहलाद नाटक</value>
+  </data>
+  <data name="Menu_Radha_Prema_Leela" xml:space="preserve">
+    <value>राधा प्रेम लीला</value>
+  </data>
+  <data name="Menu_Bharata_Leela" xml:space="preserve">
+    <value>भरत लीला</value>
+  </data>
+  <data name="Menu_Ghoda_Nacha" xml:space="preserve">
+    <value>घोड़ा नाचा</value>
+  </data>
+  <data name="Menu_Pasu_Mukha_Nacha" xml:space="preserve">
+    <value>पसु मुख नाचा</value>
+  </data>
+  <data name="Menu_Bengal" xml:space="preserve">
+    <value>बंगाल</value>
+  </data>
+  <data name="Menu_Assam" xml:space="preserve">
+    <value>असम</value>
+  </data>
+  <data name="Menu_Film_Music" xml:space="preserve">
+    <value>फ़िल्म संगीत</value>
+  </data>
+  <data name="Menu_Bollywood" xml:space="preserve">
+    <value>बॉलीवुड (हिन्दी)</value>
+  </data>
+  <data name="Menu_Ollywood" xml:space="preserve">
+    <value>ओलीवुड (उड़िया)</value>
+  </data>
+  <data name="Menu_Gujrathi" xml:space="preserve">
+    <value>गुजराती</value>
+  </data>
+  <data name="Menu_Kannada" xml:space="preserve">
+    <value>कन्नडा</value>
+  </data>
+  <data name="Menu_Bengali" xml:space="preserve">
+    <value>बंगाली</value>
+  </data>
+  <data name="Menu_Marathi" xml:space="preserve">
+    <value>मराठी</value>
+  </data>
+  <data name="Menu_Assamee" xml:space="preserve">
+    <value>आसामी</value>
+  </data>
+  <data name="Menu_Telugu" xml:space="preserve">
+    <value>तेलुगू</value>
+  </data>
+  <data name="Menu_Tamil" xml:space="preserve">
+    <value>तामिल</value>
+  </data>
+  <data name="Menu_Instruments" xml:space="preserve">
+    <value>उपकरण</value>
+  </data>
+  <data name="Menu_Wind_Instrument" xml:space="preserve">
+    <value>हवा उपकरण</value>
+  </data>
+  <data name="Menu_Flute" xml:space="preserve">
+    <value>बांसुरी</value>
+  </data>
+  <data name="Menu_Shehnai" xml:space="preserve">
+    <value>शहनाई</value>
+  </data>
+  <data name="Menu_Saxopnone" xml:space="preserve">
+    <value>सैक्सोप्नोन</value>
+  </data>
+  <data name="Menu_Mukhabina" xml:space="preserve">
+    <value>मुखबीना</value>
+  </data>
+  <data name="Menu_Nada_Venu" xml:space="preserve">
+    <value>नाडा वेणु</value>
+  </data>
+  <data name="Menu_Trumpet" xml:space="preserve">
+    <value>तुरही</value>
+  </data>
+  <data name="Menu_Mouth_Organ" xml:space="preserve">
+    <value>माउथ ऑर्गन</value>
+  </data>
+  <data name="Menu_String_Instrument" xml:space="preserve">
+    <value>तार वाद्य यंत्र</value>
+  </data>
+  <data name="Menu_Sitar" xml:space="preserve">
+    <value>सितार</value>
+  </data>
+  <data name="Menu_Violine" xml:space="preserve">
+    <value>वायलिन</value>
+  </data>
+  <data name="Menu_Sarod" xml:space="preserve">
+    <value>सरोद</value>
+  </data>
+  <data name="Menu_Guitar" xml:space="preserve">
+    <value>गिटार</value>
+  </data>
+  <data name="Menu_Tanpura" xml:space="preserve">
+    <value>तानपुरा</value>
+  </data>
+  <data name="Menu_Percussion_Instruments" xml:space="preserve">
+    <value>ताल वाद्य यंत्र</value>
+  </data>
+  <data name="Menu_Tabla" xml:space="preserve">
+    <value>तबला</value>
+  </data>
+  <data name="Menu_Drum" xml:space="preserve">
+    <value>ढोल</value>
+  </data>
+  <data name="Menu_Mardhal" xml:space="preserve">
+    <value>मर्दहल</value>
+  </data>
+  <data name="Menu_Pakhawuj" xml:space="preserve">
+    <value>पखवुज</value>
+  </data>
+  <data name="Menu_Artists__Legends" xml:space="preserve">
+    <value>कलाकार और दिग्गज</value>
+  </data>
+  <data name="Menu_Vocalist" xml:space="preserve">
+    <value>गायक</value>
+  </data>
+  <data name="Menu_Instrumentalist" xml:space="preserve">
+    <value>वादक</value>
+  </data>
+  <data name="Menu_Composer" xml:space="preserve">
+    <value>संगीतकार</value>
+  </data>
+  <data name="Menu_Lyricists" xml:space="preserve">
+    <value>गीतकार</value>
+  </data>
+  <data name="Menu_Folk_Legends" xml:space="preserve">
+    <value>लोक कलाकार</value>
+  </data>
+  <data name="Menu_Learn__Explore" xml:space="preserve">
+    <value>सीखें और खोजें</value>
+  </data>
+  <data name="Menu_Music_Theory" xml:space="preserve">
+    <value>संगीत सिद्धांत</value>
+  </data>
+  <data name="Menu_Ragas__Talas" xml:space="preserve">
+    <value>राग और ताल</value>
+  </data>
+  <data name="Menu_Tutorials__Lessions" xml:space="preserve">
+    <value>ट्यूटोरियल और पाठ</value>
+  </data>
+  <data name="Menu_Glossary" xml:space="preserve">
+    <value>शब्दावली</value>
+  </data>
+  <data name="Menu_Community" xml:space="preserve">
+    <value>समुदाय</value>
+  </data>
+  <data name="Menu_Blogs" xml:space="preserve">
+    <value>ब्लॉग</value>
+  </data>
+  <data name="Menu_Submit_Music" xml:space="preserve">
+    <value>संगीत सबमिट करें</value>
+  </data>
+  <data name="Menu_Event__Gigs" xml:space="preserve">
+    <value>कार्यक्रम और कार्यक्रम</value>
+  </data>
+  <data name="Menu_Interviews" xml:space="preserve">
+    <value>साक्षात्कार</value>
+  </data>
+  <data name="Menu_Forum_or_Discussion" xml:space="preserve">
+    <value>मंच / चर्चा</value>
+  </data>
+  <data name="Menu_About" xml:space="preserve">
+    <value>हमारी कहानी</value>
+  </data>
+  <data name="Menu_About_us" xml:space="preserve">
+    <value>हमारे बारे में</value>
+  </data>
+  <data name="Menu_Contact" xml:space="preserve">
+    <value>संपर्क</value>
+  </data>
+  <data name="Menu_Contributors" xml:space="preserve">
+    <value>योगदानकर्ता</value>
+  </data>
+  <data name="Menu_Credits" xml:space="preserve">
+    <value>साभार</value>
+  </data>
 </root>

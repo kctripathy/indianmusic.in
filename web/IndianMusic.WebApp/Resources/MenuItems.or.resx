@@ -34,4 +34,229 @@
   <data name="Hello" xml:space="preserve">
     <value>ନମସ୍କାର</value>
   </data>
+  <data name="Menu_Classical_Music" xml:space="preserve">
+    <value>ଶାସ୍ତ୍ରୀୟ ସଙ୍ଗୀତ</value>
+  </data>
+  <data name="Menu_Hindustani_Classical" xml:space="preserve">
+    <value>ହିନ୍ଦୁସ୍ତାନୀ ଶାସ୍ତ୍ରୀୟ</value>
+  </data>
+  <data name="Menu_Artists" xml:space="preserve">
+    <value>କଳାକାର</value>
+  </data>
+  <data name="Menu_Thats" xml:space="preserve">
+    <value>ଥାଟ</value>
+  </data>
+  <data name="Menu_Ragas" xml:space="preserve">
+    <value>ରାଗ</value>
+  </data>
+  <data name="Menu_Talas" xml:space="preserve">
+    <value>ତାଳ</value>
+  </data>
+  <data name="Menu_Instumentals" xml:space="preserve">
+    <value>ବାଦ୍ୟଯନ୍ତ୍ର</value>
+  </data>
+  <data name="Menu_Compositions" xml:space="preserve">
+    <value>ରଚନା (ଖାୟଲ, ଧ୍ରୁପାଦ, ଇତ୍ୟାଦି)</value>
+  </data>
+  <data name="Menu_Carnatic" xml:space="preserve">
+    <value>କାର୍ନାଟିକ</value>
+  </data>
+  <data name="Menu_Artists" xml:space="preserve">
+    <value>କଳାକାର</value>
+  </data>
+  <data name="Menu_Melas" xml:space="preserve">
+    <value>ମେଳ</value>
+  </data>
+  <data name="Menu_Odissi" xml:space="preserve">
+    <value>ଓଡ଼ିଶୀ</value>
+  </data>
+  <data name="Menu_Champus" xml:space="preserve">
+    <value>ଚମ୍ପୁ</value>
+  </data>
+  <data name="Menu_Chhandas" xml:space="preserve">
+    <value>ଛାନ୍ଦ</value>
+  </data>
+  <data name="Menu_Folk_Music" xml:space="preserve">
+    <value>ଲୋକ ସଂଗୀତ</value>
+  </data>
+  <data name="Menu_Odisha" xml:space="preserve">
+    <value>ଓଡ଼ିଶା</value>
+  </data>
+  <data name="Menu_Prahallada_Nataka" xml:space="preserve">
+    <value>ପ୍ରହଲ୍ଲାଦ ନାଟକ</value>
+  </data>
+  <data name="Menu_Radha_Prema_Leela" xml:space="preserve">
+    <value>ରାଧା ପ୍ରେମ ଲୀଳା</value>
+  </data>
+  <data name="Menu_Bharata_Leela" xml:space="preserve">
+    <value>ଭାରତ ଲୀଳା</value>
+  </data>
+  <data name="Menu_Ghoda_Nacha" xml:space="preserve">
+    <value>ଘୋଡା ନାଚ</value>
+  </data>
+  <data name="Menu_Pasu_Mukha_Nacha" xml:space="preserve">
+    <value>ପାସୁ ମୁଖା ନାଚ</value>
+  </data>
+  <data name="Menu_Bengal" xml:space="preserve">
+    <value>ବଙ୍ଗଳା</value>
+  </data>
+  <data name="Menu_Assam" xml:space="preserve">
+    <value>ଆସାମ</value>
+  </data>
+  <data name="Menu_Film_Music" xml:space="preserve">
+    <value>ଚଳଚ୍ଚିତ୍ର ସଙ୍ଗୀତ</value>
+  </data>
+  <data name="Menu_Bollywood" xml:space="preserve">
+    <value>ବଲିଉଡ (ହିନ୍ଦୀ)</value>
+  </data>
+  <data name="Menu_Ollywood" xml:space="preserve">
+    <value>ଓଲିଉଡ୍ (ଓଡିଆ)</value>
+  </data>
+  <data name="Menu_Gujrathi" xml:space="preserve">
+    <value>ଗୁଜରାଟୀ</value>
+  </data>
+  <data name="Menu_Kannada" xml:space="preserve">
+    <value>କନ୍ନଡ</value>
+  </data>
+  <data name="Menu_Bengali" xml:space="preserve">
+    <value>ବଙ୍ଗାଳୀ</value>
+  </data>
+  <data name="Menu_Marathi" xml:space="preserve">
+    <value>ମରାଠୀ</value>
+  </data>
+  <data name="Menu_Assamee" xml:space="preserve">
+    <value>ଆସାମି</value>
+  </data>
+  <data name="Menu_Telugu" xml:space="preserve">
+    <value>ତେଲୁଗୁ</value>
+  </data>
+  <data name="Menu_Tamil" xml:space="preserve">
+    <value>ତାମିଲ୍</value>
+  </data>
+  <data name="Menu_Instruments" xml:space="preserve">
+    <value>ଯନ୍ତ୍ରଗୁଡ଼ିକ</value>
+  </data>
+  <data name="Menu_Wind_Instrument" xml:space="preserve">
+    <value>ପବନ ଯନ୍ତ୍ର</value>
+  </data>
+  <data name="Menu_Flute" xml:space="preserve">
+    <value>ବଂଶୀ</value>
+  </data>
+  <data name="Menu_Shehnai" xml:space="preserve">
+    <value>ଶେହନାଇ</value>
+  </data>
+  <data name="Menu_Saxopnone" xml:space="preserve">
+    <value>ସାକ୍ସୋଫୋନ୍</value>
+  </data>
+  <data name="Menu_Mukhabina" xml:space="preserve">
+    <value>ମୁଖବିଣା</value>
+  </data>
+  <data name="Menu_Nada_Venu" xml:space="preserve">
+    <value>ନାଦ ବେଣୁ</value>
+  </data>
+  <data name="Menu_Trumpet" xml:space="preserve">
+    <value>ତୁରୀ</value>
+  </data>
+  <data name="Menu_Mouth_Organ" xml:space="preserve">
+    <value>ମୁଖ ଅଙ୍ଗ</value>
+  </data>
+  <data name="Menu_String_Instrument" xml:space="preserve">
+    <value>ତାର ବାଦ୍ୟଯନ୍ତ୍ର</value>
+  </data>
+  <data name="Menu_Sitar" xml:space="preserve">
+    <value>ସିତାର</value>
+  </data>
+  <data name="Menu_Violine" xml:space="preserve">
+    <value>ଭାୟୋଲିନ୍</value>
+  </data>
+  <data name="Menu_Sarod" xml:space="preserve">
+    <value>ସରୋଦ</value>
+  </data>
+  <data name="Menu_Guitar" xml:space="preserve">
+    <value>ଗିଟାର</value>
+  </data>
+  <data name="Menu_Tanpura" xml:space="preserve">
+    <value>ତାନପୁରା</value>
+  </data>
+  <data name="Menu_Percussion_Instruments" xml:space="preserve">
+    <value>ତାଳ ବାଦ୍ୟଯନ୍ତ୍ର</value>
+  </data>
+  <data name="Menu_Tabla" xml:space="preserve">
+    <value>ତବଲା</value>
+  </data>
+  <data name="Menu_Drum" xml:space="preserve">
+    <value>ଡ୍ରମ୍</value>
+  </data>
+  <data name="Menu_Mardhal" xml:space="preserve">
+    <value>ମାର୍ଧାଲ</value>
+  </data>
+  <data name="Menu_Pakhawuj" xml:space="preserve">
+    <value>ପଖୱୁଜ</value>
+  </data>
+  <data name="Menu_Artists__Legends" xml:space="preserve">
+    <value>କଳାକାର ଏବଂ କିମ୍ବଦନ୍ତୀ</value>
+  </data>
+  <data name="Menu_Vocalist" xml:space="preserve">
+    <value>କଣ୍ଠସ୍ୱର</value>
+  </data>
+  <data name="Menu_Instrumentalist" xml:space="preserve">
+    <value>ବାଦ୍ୟଯନ୍ତ୍ର</value>
+  </data>
+  <data name="Menu_Composer" xml:space="preserve">
+    <value>ରଚନାକାର</value>
+  </data>
+  <data name="Menu_Lyricists" xml:space="preserve">
+    <value>ଗୀତିକାର</value>
+  </data>
+  <data name="Menu_Folk_Legends" xml:space="preserve">
+    <value>ଲୋକ କଳାକାର</value>
+  </data>
+  <data name="Menu_Learn__Explore" xml:space="preserve">
+    <value>ଶିଖନ୍ତୁ ଏବଂ ଅନୁସନ୍ଧାନ କରନ୍ତୁ</value>
+  </data>
+  <data name="Menu_Music_Theory" xml:space="preserve">
+    <value>ସଙ୍ଗୀତ ତତ୍ତ୍ୱ</value>
+  </data>
+  <data name="Menu_Ragas__Talas" xml:space="preserve">
+    <value>ରାଗ ଏବଂ ତାଳ</value>
+  </data>
+  <data name="Menu_Tutorials__Lessions" xml:space="preserve">
+    <value>ଟ୍ୟୁଟୋରିଆଲ୍ ଏବଂ ପାଠ</value>
+  </data>
+  <data name="Menu_Glossary" xml:space="preserve">
+    <value>ଶବ୍ଦକୋଷ</value>
+  </data>
+  <data name="Menu_Community" xml:space="preserve">
+    <value>ସମ୍ପ୍ରଦାୟ</value>
+  </data>
+  <data name="Menu_Blogs" xml:space="preserve">
+    <value>ବ୍ଲଗ୍</value>
+  </data>
+  <data name="Menu_Submit_Music" xml:space="preserve">
+    <value>ସଙ୍ଗୀତ ଦାଖଲ କରନ୍ତୁ</value>
+  </data>
+  <data name="Menu_Event__Gigs" xml:space="preserve">
+    <value>ଇଭେଣ୍ଟ ଏବଂ ଗିଗ୍ସ</value>
+  </data>
+  <data name="Menu_Interviews" xml:space="preserve">
+    <value>ସାକ୍ଷାତକାର</value>
+  </data>
+  <data name="Menu_Forum_or_Discussion" xml:space="preserve">
+    <value>ଫୋରମ / ଆଲୋଚନା</value>
+  </data>
+  <data name="Menu_About" xml:space="preserve">
+    <value>ଆମ କଥା </value>
+  </data>
+  <data name="Menu_About_us" xml:space="preserve">
+    <value>ଆମ ବିଷୟରେ</value>
+  </data>
+  <data name="Menu_Contact" xml:space="preserve">
+    <value>ଯୋଗାଯୋଗ</value>
+  </data>
+  <data name="Menu_Contributors" xml:space="preserve">
+    <value>ଅବଦାନକାରୀ</value>
+  </data>
+  <data name="Menu_Credits" xml:space="preserve">
+    <value>କ୍ରେଡିଟ୍</value>
+  </data>
 </root>
