@@ -1,0 +1,54 @@
+﻿
+
+html {
+    font-family: Roboto, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+main {
+    margin-top: -20px;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    color: var(--text-color);
+}
+
+h1 {
+    /*font-family: 'DM Serif Display', serif;*/
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+    /*font-family: "DM Serif Display", Verdana, Geneva, Tahoma, sans-serif;*/
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+
+.form-check-input[type=checkbox] {
+    border: solid 1px #808080 !important;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}

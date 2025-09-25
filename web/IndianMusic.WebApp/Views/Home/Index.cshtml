@@ -9,15 +9,13 @@
      var culture = feature?.RequestCulture.UICulture.Name;
 }
 
-<div class="text-left m-1 p-1 row">
-    <div class="col-lg-11"><h1>@Localizer["01_Header"]</h1></div>
-    <div class="col-lg-1"></div>
-</div>
-<div class="text-left m-1 p-1 row">
-    <h4>@Localizer["02_SubHeader"]</h4>
-</div>
 <div class="container">
-    @* <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-1"> *@
+    <div class="text-left row m-1 p-2 mt-4">
+        <div class="col-lg-12">
+            <h2>@Localizer["01_Header"]</h2>
+            <h3>@Localizer["02_SubHeader"]</h3>
+        </div>
+    </div>
     <div class="row g-1">
         <div class="col-lg-3">
             @await Component.InvokeAsync("ArtistOfTheDay")
@@ -29,9 +27,4 @@
             @await Component.InvokeAsync("MusicOfTheDay")
         </div>
     </div>
-    @* <div class="row">
-        <div class="col-12">
-            @await Component.InvokeAsync("SearchBar")
-        </div>
-    </div> *@
 </div>

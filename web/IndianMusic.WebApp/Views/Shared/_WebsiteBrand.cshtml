@@ -1,0 +1,13 @@
+﻿<div class="row m-0 p-0">
+    <div class="col-12 m-0 p-0">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+            <div class="brand"><img src="~/images/logo.png" /></div>
+            <div class="highlight brand light-theme" id="spanIndian">Indian</div>
+            <div class="brand" id="spanMusic">Music</div>
+            <div class="brand" id="spanRedDot">.</div>
+        </a>
+    </div>
+    <div id="languageSelector">
+        @await Html.PartialAsync("_LanguageSelector")
+    </div>
+</div>

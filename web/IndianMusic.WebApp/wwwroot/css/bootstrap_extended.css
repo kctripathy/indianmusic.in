@@ -1,0 +1,18 @@
+﻿.container {
+    min-height: 600px;
+}
+
+.navbar-dark {
+    border-bottom: solid 2px var(--border-color) !important;
+}
+
+.dropdown-item.active {
+    background-color: var(--primary-color) !important;
+}
+.footer {
+    font-size: 0.8rem;
+    height: 30px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}

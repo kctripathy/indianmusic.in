@@ -1,6 +1,9 @@
 ﻿using IndianMusic.WebApp.Models;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace IndianMusic.WebApp.Controllers
@@ -122,6 +125,59 @@ namespace IndianMusic.WebApp.Controllers
                 return Redirect(returnUrl);
             else
                 return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult LoginWithGoogle(string returnUrl = "/")
+        {
+            var props = new AuthenticationProperties { RedirectUri = returnUrl };
+            return Challenge(props, "Google");
+        }
+
+        public IActionResult LogoutWithGoogle()
+        {
+            return SignOut(new AuthenticationProperties { RedirectUri = "/" },
+                           CookieAuthenticationDefaults.AuthenticationScheme);
+        }
+
+        [HttpPost]
+        public IActionResult ExternalLogin(string provider, string returnUrl = "/")
+        {
+            var redirectUrl = Url.Action("ExternalLoginCallback", "Account", new { ReturnUrl = returnUrl });
+            var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider, redirectUrl);
+            return Challenge(properties, provider);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ExternalLoginCallback(string returnUrl = "/", string remoteError = null)
+        {
+            if (remoteError != null)
+                return RedirectToAction("Login");
+
+            var info = await _signInManager.GetExternalLoginInfoAsync();
+            if (info == null)
+                return RedirectToAction("Login");
+
+            // Sign in the user with this external login provider
+            var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false);
+
+            if (result.Succeeded)
+                return LocalRedirect(returnUrl);
+
+            // If the user does not have an account, create one
+            var email = info.Principal.FindFirstValue(System.Security.Claims.ClaimTypes.Email);
+            if (email != null)
+            {
+                var user = new ApplicationUser { UserName = email, Email = email };
+                var createResult = await _signInManager.UserManager.CreateAsync(user);
+                if (createResult.Succeeded)
+                {
+                    await _signInManager.UserManager.AddLoginAsync(user, info);
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    return LocalRedirect(returnUrl);
+                }
+            }
+
+            return RedirectToAction("Login");
         }
     }
 }

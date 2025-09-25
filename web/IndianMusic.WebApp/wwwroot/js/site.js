@@ -10,7 +10,7 @@ function toggleTheme() {
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     if (newTheme == 'dark') {
         $(themeToggleBtn).prop('checked', true);
-        $('.light-btn').each(function () {
+        $('.light-theme').each(function () {
             $(this)
                 .removeClass('light-theme light-menu-theme light-btn')
                 .addClass('dark-theme dark-menu-theme dark-btn');
