@@ -1,6 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!--Auto-generated resource file-->
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -8,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="WelcomeMessage" xml:space="preserve">
     <value>स्वागत</value>
@@ -37,8 +141,14 @@
   <data name="Menu_Classical_Music" xml:space="preserve">
     <value>शास्त्रीय संगीत</value>
   </data>
-  <data name="Menu_Hindustani_Classical" xml:space="preserve">
+  <data name="Menu_Music" xml:space="preserve">
+    <value>संगीत</value>
+  </data>
+  <data name="Menu_Classical_Hindustani" xml:space="preserve">
     <value>हिंदुस्तानी शास्त्रीय</value>
+  </data>
+  <data name="Menu_Classical_Odissi" xml:space="preserve">
+    <value>ओडिसी शास्त्रीय</value>
   </data>
   <data name="Menu_Artists" xml:space="preserve">
     <value>कलाकार</value>
@@ -60,9 +170,6 @@
   </data>
   <data name="Menu_Carnatic" xml:space="preserve">
     <value>कर्नाटक</value>
-  </data>
-  <data name="Menu_Artists" xml:space="preserve">
-    <value>कलाकार</value>
   </data>
   <data name="Menu_Melas" xml:space="preserve">
     <value>मेलों</value>
@@ -134,9 +241,9 @@
     <value>तामिल</value>
   </data>
   <data name="Menu_Instruments" xml:space="preserve">
-    <value>उपकरण</value>
+    <value>वाद्ययंत्र</value>
   </data>
-  <data name="Menu_Wind_Instrument" xml:space="preserve">
+  <data name="Menu_Wind_Instruments" xml:space="preserve">
     <value>हवा उपकरण</value>
   </data>
   <data name="Menu_Flute" xml:space="preserve">
@@ -160,7 +267,7 @@
   <data name="Menu_Mouth_Organ" xml:space="preserve">
     <value>माउथ ऑर्गन</value>
   </data>
-  <data name="Menu_String_Instrument" xml:space="preserve">
+  <data name="Menu_String_Instruments" xml:space="preserve">
     <value>तार वाद्य यंत्र</value>
   </data>
   <data name="Menu_Sitar" xml:space="preserve">
@@ -206,21 +313,21 @@
     <value>संगीतकार</value>
   </data>
   <data name="Menu_Lyricists" xml:space="preserve">
-    <value>गीतकार</value>
+    <value>गीतिकार </value>
   </data>
   <data name="Menu_Folk_Legends" xml:space="preserve">
-    <value>लोक कलाकार</value>
+    <value>लोक संगीत के दिग्गज</value>
   </data>
-  <data name="Menu_Learn__Explore" xml:space="preserve">
-    <value>सीखें और खोजें</value>
+  <data name="Menu_Learn" xml:space="preserve">
+    <value>सीखें</value>
   </data>
   <data name="Menu_Music_Theory" xml:space="preserve">
     <value>संगीत सिद्धांत</value>
   </data>
-  <data name="Menu_Ragas__Talas" xml:space="preserve">
+  <data name="Menu_Ragas_Talas" xml:space="preserve">
     <value>राग और ताल</value>
   </data>
-  <data name="Menu_Tutorials__Lessions" xml:space="preserve">
+  <data name="Menu_Tutorials_Lessions" xml:space="preserve">
     <value>ट्यूटोरियल और पाठ</value>
   </data>
   <data name="Menu_Glossary" xml:space="preserve">
@@ -233,15 +340,15 @@
     <value>ब्लॉग</value>
   </data>
   <data name="Menu_Submit_Music" xml:space="preserve">
-    <value>संगीत सबमिट करें</value>
+    <value>छूटा हुआ संगीत सबमिट करें</value>
   </data>
-  <data name="Menu_Event__Gigs" xml:space="preserve">
+  <data name="Menu_Event_Gigs" xml:space="preserve">
     <value>कार्यक्रम और कार्यक्रम</value>
   </data>
   <data name="Menu_Interviews" xml:space="preserve">
     <value>साक्षात्कार</value>
   </data>
-  <data name="Menu_Forum_or_Discussion" xml:space="preserve">
+  <data name="Menu_Forum" xml:space="preserve">
     <value>मंच / चर्चा</value>
   </data>
   <data name="Menu_About" xml:space="preserve">
@@ -258,5 +365,50 @@
   </data>
   <data name="Menu_Credits" xml:space="preserve">
     <value>साभार</value>
+  </data>
+  <data name="Menu_Classical_Carnatic" xml:space="preserve">
+    <value>कर्नाटक शास्त्रीय संगीत</value>
+  </data>
+  <data name="Menu_Instrumental_Music" xml:space="preserve">
+    <value>वाद्य संगीत</value>
+  </data>
+  <data name="Menu_Karaoke_Music" xml:space="preserve">
+    <value>कराओके संगीत</value>
+  </data>
+  <data name="Menu_Playlist" xml:space="preserve">
+    <value>संगीत सूची</value>
+  </data>
+  <data name="Menu_Instrumental_Wind" xml:space="preserve">
+    <value>वायु वाद्ययंत्र</value>
+  </data>
+  <data name="Menu_Instrumental_Percussion" xml:space="preserve">
+    <value>ताल वाद्ययंत्र</value>
+  </data>
+  <data name="Menu_Instrumental_String" xml:space="preserve">
+    <value>तार वाद्ययंत्र</value>
+  </data>
+  <data name="Menu_Composers" xml:space="preserve">
+    <value>संगीतकार</value>
+  </data>
+  <data name="Menu_Music_Directors" xml:space="preserve">
+    <value>संगीत निर्देशक</value>
+  </data>
+  <data name="Menu_Instrumentalists" xml:space="preserve">
+    <value>वादक</value>
+  </data>
+  <data name="Menu_Vocalists" xml:space="preserve">
+    <value>कंठशिल्पी </value>
+  </data>
+  <data name="Menu_Playback_Singers" xml:space="preserve">
+    <value>पार्श्व कंठशिल्पी </value>
+  </data>
+  <data name="Menu_Buy_or_Sale" xml:space="preserve">
+    <value>खरीदें / बेचें</value>
+  </data>
+  <data name="Menu_Request_for_new_Music" xml:space="preserve">
+    <value>नए संगीत के लिए अनुरोध कीजिये</value>
+  </data>
+  <data name="Menu_Dark_Theme" xml:space="preserve">
+    <value>डार्क थीम</value>
   </data>
 </root>

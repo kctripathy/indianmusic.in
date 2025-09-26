@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Music Home";
+}
+
+<h2>Welcome to Music Section</h2>
+<p>Select a category:</p>
+
+<ul>
+    <li><a asp-area="Music" asp-controller="Home" asp-action="Index" asp-route-slug="classical-music/hindustani">Hindustani Music</a></li>
+    <li><a asp-area="Music" asp-controller="Home" asp-action="Index" asp-route-slug="classical-music/odissi">Odissi Music</a></li>
+    <li><a asp-area="Music" asp-controller="Home" asp-action="Index" asp-route-slug="film-music">Film Music</a></li>
+</ul>

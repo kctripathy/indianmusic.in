@@ -1,0 +1,33 @@
+26/09/25
+
+| URL                                 | `slug` value                 | Parsed Parts                       |
+| ----------------------------------- | ---------------------------- | ---------------------------------- |
+| `/music/classical-music/hindustani` | `classical-music/hindustani` | `["classical-music","hindustani"]` |
+| `/music/classical-music/odissi`     | `classical-music/odissi`     | `["classical-music","odissi"]`     |
+| `/music/film-music`                 | `film-music`                 | `["film-music"]`                   |
+| `/music`                            | `""` (empty)                 | Default page                       |
+
+
+<a asp-area="Music" asp-controller="Home" asp-action="Index" asp-route-slug="classical-music/hindustani">
+    Hindustani Music
+</a>
+
+<a asp-area="Music" asp-controller="Home" asp-action="Index" asp-route-slug="film-music">
+    Film Music
+</a>
+
+Routing Notes
+
+[Route("{*slug}")] → catch-all route.
+Place this after your default routes in Program.cs or ensure it’s specific to the area.
+ASP.NET Core will pass everything after /music/ into the slug parameter.
+
+5️⃣ Optional: Make SEO-Friendly Slugs
+You can store your URLs as category/subcategory in DB and map dynamically.
+You could also add dash-to-space conversion:
+var categoryName = parts[0].Replace("-", " ");  // "classical music"
+
+
+Generating Links Dynamically
+<a asp-area="Music" asp-controller="Home" asp-action="Index" asp-route-slug="classical-music/hindustani">Hindustani</a>
+<a asp-area="Music" asp-controller="Home" asp-action="Index" asp-route-slug="film-music">Film Music</a>

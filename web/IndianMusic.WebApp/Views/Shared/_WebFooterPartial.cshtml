@@ -1,11 +1,17 @@
-﻿<footer class="border-top footer text-muted text-sm-center">
+﻿@{
+    var version = string.Concat("v", System.Reflection.Assembly.GetExecutingAssembly().GetName().Version?.ToString());
+}
+<footer class="border-top footer text-muted text-sm-center">
     <div class="container">
-        &copy; 2025 - IndianMusicz - 
+        <span class="d-block float-start"><partial name="_YouTubeSubscriptionButton" /></span>
+        <small class="ml-2">&copy; 2025 - IndianMusic.in</small>
         <a asp-area="" asp-controller="Home" asp-action="Index">Home</a> :
         <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> :
-        <a asp-area="" asp-controller="Home" asp-action="Privacy">Disclaimer</a> :
-        <a asp-area="" asp-controller="Home" asp-action="Privacy">About</a> :
-        <a asp-area="" asp-controller="Home" asp-action="Privacy">Contact</a> :
-        <span>v1.0</span>
+        <a asp-area="" asp-controller="Home" asp-action="Terms">Terms</a> :
+        <a asp-area="" asp-controller="Home" asp-action="Disclaimer">Disclaimer</a> :
+        <a asp-area="" asp-controller="Home" asp-action="About">About</a> :
+        <a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+        <small class="ml-2">@version</small>
+        <span class="d-block float-end"><partial name="_YouTubeSubscriptionButton" /></span>
     </div>
 </footer>

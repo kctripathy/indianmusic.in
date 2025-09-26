@@ -8,3 +8,17 @@ R̲̣ N̲̣ G̲̣ D̲̣
 Ṇ R Ṇ G, Ḿ G R, Ṇ R S
 
 P̣ ḍ Ḍ ṇ Ṇ S r R g G M Ḿ P d D n N Ṡ ṙ Ṙ  ġ Ġ ṁ Ṁ Ṗ
+
+S = Sa
+r = Komal Re (flat Rishabh)
+R = Shuddha Re (natural Rishabh)
+g = Komal Ga (flat Gandhar)
+G = Shuddha Ga (natural Gandhar)
+m = Shuddha Ma (natural Madhyam)
+M = Teevra Ma (sharp Madhyam)
+P = Pa (Pancham)
+d = Komal Dha (flat Dhaivat)
+D = Shuddha Dha (natural Dhaivat)
+n = Komal Ni (flat Nishad)
+N = Shuddha Ni (natural Nishad)
+Ṡ = Higher octave Sa

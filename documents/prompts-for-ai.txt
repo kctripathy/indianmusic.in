@@ -1,3 +1,53 @@
+please give me the songs information in below format. remember MovieReleaseYear is a varchar field and below is the format I need in csv format
+[Title], [MovieName], [MovieReleaseYear],[ComposersName], [SingersName],[LyricistName]
+If a song doesn't belong to a movie, give the name of the album in place of movie name, and if you don't know the album name, then put a null
+
+Odia film songs:
+1. Sanja sakale tuma chhabi khoje
+2. Swargadapi gariyasi
+3. Re atman nidra parihari
+4. Ma tume mamatara sima hina sagar
+5. Nupura kahinki mu bandhi li
+6. Chandrama ago chandrama tume megha tame luchi jaona
+7. Aji mu srabani
+8. Mayurigo tuma akase mu dine
+9. Mu je amruta sagara bindu
+10. Mu je janena kahabata
+11. Dhali dia sara dharani re aji
+12. Nadira nama alsa kanya
+13. Punyara nadi tire
+14. smruti eka rupa jahna
+15. Ei jibana ta eka nataka
+16. Nida bhara rati madhu bhara jahna
+17. Ago chandri ka
+18. Kacha kantha ra se pakhe mu
+19. Nisi bi jane bhabe mane
+20. Ka pada sabada suni mu
+##########################################
+
+I am giving you a list of odia songs, can you please provide me its moviename, composer, lyricist and singers for each song?
+1. Sanja sakale tuma chhabi khoje
+2. Swargadapi gariyasi
+3. Re atman nidra parihari
+4. Ma tume mamatara sima hina sagar
+5. Nupura kahinki mu bandhi li
+6. Chandrama ago chandrama tume megha tame luchi jaona
+7. Aji mu srabani
+8. Mayurigo tuma akase mu dine
+9. Mu je amruta sagara bindu
+10. Mu je janena kahabata
+11. Dhali dia sara dharani re aji
+12. Nadira nama alsa kanya
+13. Punyara nadi tire
+14. smruti eka rupa jahna
+15. Ei jibana ta eka nataka
+16. Nida bhara rati madhu bhara jahna
+17. Ago chandri ka
+18. Kacha kantha ra se pakhe mu
+19. Nisi bi jane bhabe mane
+20. Ka pada sabada suni mu
+
+
 INSERT INTO Artists ([Name], [ShortDesc], BirthDate, DeathDate, PhotoURL) VALUES
 (N'Pt. Ravi Shankar', N'Sitar maestro and composer', '1920-04-07', '1980-04-07','http://indianmusic.com/images/artist/ravi.jpg'),
 

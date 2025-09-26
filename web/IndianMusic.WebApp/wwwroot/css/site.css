@@ -12,68 +12,8 @@
     --border-color: #FF4081;    /* neon pink*/ /*#db005e;*/
     --danger-color: red;
     --highlight-color: #63052e;
-    /*--bs-dropdown-link-active-bg: #800000;*/
-}
-
-
-
-
-.divider-line {
-    height: 1px;
-    margin: 0px 0px 5px 0px;
-    /*background: linear-gradient(90deg, rgb(33 37 41) 12%, rgba(174, 30, 92, 1) 50%, rgb(33 37 41) 89%);*/
-    background: linear-gradient(90deg, rgb(33 37 41) 12%, var(--primary-color) 50%, rgb(33 37 41) 89%);
-}
-
-.divider-line-light-bg-from-center {
-    height: 1px;
-    margin: 0px 0px 5px 0px;
-    background: linear-gradient(90deg, rgb(255 255 255) 12%, var(--primary-color) 50%, rgb(255 255 255) 89%);
-}
-
-.divider-line-light-bg {
-    background: linear-gradient(90deg, rgb(174 30 92) 12%, var(--primary-color) 20%, rgb(255 255 255) 89%);
-    height: 1px;
-}
-
-.highlight {
-    color: var(--highlight-color);
-}
-
-.boder-gradient {
-    background: #FFFFFF;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 12%, rgba(174, 30, 92, 1) 50%, rgba(255, 255, 255, 1) 89%);
-    height: 1px;
-    margin: -9px 0px 5px 0px;
-    padding: 0px;
-}
-
-.btn-primary {
-    background-color: var(--highlight-color);
-    border-color: var(--border-color);
-}
-
-.btn-outline-success {
-    color: var(--highlight-color);
-    border-color: var(--border-color) !important;
-}
-
-    .btn-outline-success:hover {
-        color: white;
-        background-color: var(--highlight-color);
-    }
-
-
-.of-the-day-card {
-    min-height: 300px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.card-body {
-    padding: .5rem 1rem;
-}
-.card-title {
-    margin-bottom: .2rem;
+    --dark-theme-text-color: black;
+    --light-theme-text-color: white;
 }
 
 .quote-title {
@@ -95,41 +35,76 @@
         bottom: 1rem;
         color: #808080;
     }
-/*****
+
+
+/****************************************************
 BRAND / LOGO    
-****/
-#spanIndian {
-    font-family: 'Lavishly Yours', cursive;
-    font-size: 1.7em;
-    font-weight: bold;
-    /*color: var(--text-color);*/
-}
-#spanMusic {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.7em;
-    font-weight: 600;
-    color: var(--primary-color);
-}
-#spanRedDot {
-    font-weight: 800;
-    font-size: 28px;
-    margin-left: -24px;
-    margin-top: -15px;
-    color: var(--border-color); /* #FF4081;*/
-}
-#languageSelector {
-    width: 50%;
-    margin-top: -15px;
-    margin-left: 101px;
-}
+*****************************************************/
 div.brand {
     display: block;
     float: left;
 }
-#welcome-text-1 {
-    font-size: 2em;
+
+#spanIndian {
+    font-family: 'Comforter'; /*'Lavishly Yours', cursive*/
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-top: 6px;
+    margin-right: 5px;
+    color: var(--primary-color);
 }
 
-#welcome-text-2 {
-    font-size: 1.3em;
+#spanMusic {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+#spanRedDot {
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: -24px;
+    margin-top: -14px;
+    color: var(--highlight-color);
+}
+/***************************************************************************/
+
+[data-bs-theme="dark"] span.indian,
+[data-bs-theme="dark"] .quote-title,
+[data-bs-theme="dark"] #spanIndian,
+[data-bs-theme="dark"] #spanRedDot {
+    color: var(--border-color) !important;
+}
+
+[data-bs-theme="light"] span.indian {
+    color: var(--primary-color) !important;
+}
+
+
+
+
+
+.divider-line {
+    height: 1px;
+    margin: 0px 0px 5px 0px;
+}
+
+[data-bs-theme="light"] .divider-line {
+    background: linear-gradient(90deg, rgb(255 255 255) 12%, var(--primary-color) 50%, rgb(255 255 255) 89%);
+}
+
+[data-bs-theme="dark"] .divider-line {
+    background: linear-gradient(90deg, rgb(33 37 41) 12%, #fc4080 50%, rgb(33 37 41) 89%);
+}
+
+.highlight {
+    color: var(--highlight-color);
+}
+
+.boder-gradient {
+    background: #FFFFFF;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 12%, rgba(174, 30, 92, 1) 50%, rgba(255, 255, 255, 1) 89%);
+    height: 1px;
+    margin: -9px 0px 5px 0px;
+    padding: 0px;
 }

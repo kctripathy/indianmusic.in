@@ -12,7 +12,7 @@ namespace IndianMusic.Domain.ViewModels
 
         public List<string> SelectedCategories { get; set; } = new List<string>();
 
-        public List<string> AllCategories { get; set; } = new List<string> { "Artist", "Articles", "Music Pieces" };
+        public List<string> AllCategories { get; set; } = new List<string> { "Artists", "Articles", "Music" };
     }
 
 }

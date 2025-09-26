@@ -13,6 +13,7 @@ namespace IndianMusic.WebApp.TagHelpers
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
+            //TODO: CACHE THIS 
             var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "data", "quotes.json");
             var json = await System.IO.File.ReadAllTextAsync(filePath);
             var quotes = JsonSerializer.Deserialize<List<MusicQuote>>(json) ?? new();
@@ -28,7 +29,7 @@ namespace IndianMusic.WebApp.TagHelpers
             output.Content.SetHtmlContent($@"
                 <p class='quote-title'></p>
                 <p class='quote-author'></p>
-                <div class='divider-line-light-bg-from-center'></div>
+                <div class='divider-line'></div>
                 <p class='quote-desc'></p>
                 <script>
                     (function(){{

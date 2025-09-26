@@ -1,0 +1,9 @@
+dotnet ef migrations add InitialIdentityMigration --project IndianMusic.Infrastructure --startup-project IndianMusic.WebApp
+dotnet ef database update --project IndianMusic.Infrastructure --startup-project IndianMusic.WebApp
+
+
+Scaffold-DbContext "Default" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -ContextDir Data -Context IndianMusicDbContext -Project IndianMusic.Domain -Force
+
+Scaffold-DbContext "Server=SUVRAM\\SQLEXPRESS_2022;Database=IndianMusic;User Id=sa;Password=maa@1234;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -ContextDir Data -Context IndianMusicDbContext -Project IndianMusic.Domain -Force
+
+

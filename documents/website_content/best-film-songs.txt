@@ -1,0 +1,61 @@
+	 
+  {
+    "title": "Ajare Pardesi",
+    "film": "Madhumati (1958)",
+    "singer": "Lata Mangeshkar",
+    "music": "Salil Chowdhury"
+  },
+  {
+    "title": "Dil Dhoondta Hai Phir Wahi",
+    "film": "Mausam (1975)",
+    "singer": "Bhupinder Singh, Lata Mangeshkar",
+    "music": "Madan Mohan"
+  },
+  {
+    "title": "Zindagi Kaisi Hai Paheli (inspired)",
+    "film": "Anand (1971)",
+    "singer": "Manna Dey",
+    "music": "Salil Chowdhury"
+  },
+  {
+    "title": "Neele Gagan Ke Tale (touches Kirwani)",
+    "film": "Humraaz (1967)",
+    "singer": "Mahendra Kapoor",
+    "music": "Ravi"
+  },
+  {
+    "title": "Aa Zara Kareeb Se",
+    "film": "Murder 2 (2011)",
+    "singer": "Sunidhi Chauhan",
+    "music": "Sangeet-Siddharth"
+  },
+  {
+    "title": "Tere Bin Nahin Lagda Dil",
+    "film": "Kachche Dhaage (1999)",
+    "singer": "Nusrat Fateh Ali Khan",
+    "music": "Nusrat Fateh Ali Khan"
+  },
+  {
+    "title": "Yaara Seeli Seeli",
+    "film": "Lekin (1991)",
+    "singer": "Lata Mangeshkar",
+    "music": "Hridaynath Mangeshkar"
+  },
+  {
+    "title": "Aye Dil-e-Nadaan",
+    "film": "Razia Sultan (1983)",
+    "singer": "Lata Mangeshkar",
+    "music": "Khayyam"
+  },
+  {
+    "title": "Phir Le Aaya Dil (Rekha Bhardwaj ver.)",
+    "film": "Barfi! (2012)",
+    "singer": "Rekha Bhardwaj",
+    "music": "Pritam"
+  },
+  {
+    "title": "Sajda (partially Kirwani-inspired)",
+    "film": "My Name is Khan (2010)",
+    "singer": "Rahat Fateh Ali Khan & others",
+    "music": "Shankar–Ehsaan–Loy"
+  }

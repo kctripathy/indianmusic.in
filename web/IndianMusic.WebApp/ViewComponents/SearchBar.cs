@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using IndianMusic.Domain.ViewModels;
+
 namespace IndianMusic.WebApp.ViewComponents
 {
     public class SearchBarViewComponent : ViewComponent

@@ -12,16 +12,16 @@ function toggleTheme() {
         $(themeToggleBtn).prop('checked', true);
         $('.light-theme').each(function () {
             $(this)
-                .removeClass('light-theme light-menu-theme light-btn')
-                .addClass('dark-theme dark-menu-theme dark-btn');
+                .removeClass('light-theme light-music')
+                .addClass('dark-theme dark-music');
         });
     }
     else {
         $(themeToggleBtn).prop('checked', false);
         $('.dark-theme').each(function () {
             $(this)
-                .removeClass('dark-theme dark-menu-theme dark-btn')
-                .addClass('light-theme light-menu-theme light-btn');
+                .removeClass('dark-theme dark-music')
+                .addClass('light-theme light-music');
         });
     }
     setTheme(newTheme);
@@ -59,4 +59,39 @@ document.addEventListener('click', function () {
     document.querySelectorAll('.dropdown-menu .show').forEach(function (menu) {
         menu.classList.remove('show');
     });
+});
+
+
+
+function addToFavorites(url, title) {
+    if (window.external && ('AddFavorite' in window.external)) {
+        // Old IE only
+        window.external.AddFavorite(url, title);
+    } else {
+        alert("Press Ctrl+D (Windows) or Cmd+D (Mac) to bookmark this page.");
+    }
+}
+
+$("#addFav").on("click", function (e) {
+    e.preventDefault();
+    var url = window.location.href;
+    var title = document.title;
+
+    try {
+        // Old IE only
+        if (window.external && ('AddFavorite' in window.external)) {
+            window.external.AddFavorite(url, title);
+        }
+        // Firefox <23 (very old)
+        else if (window.sidebar && window.sidebar.addPanel) {
+            window.sidebar.addPanel(title, url, "");
+        }
+        // Modern browsers
+        else {
+            const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+            alert("Press " + (isMac ? "Cmd" : "Ctrl") + "+D to bookmark this page.");
+        }
+    } catch (err) {
+        alert("Press Ctrl+D (or Cmd+D on Mac) to bookmark this page.");
+    }
 });

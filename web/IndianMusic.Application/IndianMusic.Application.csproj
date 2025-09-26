@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="EmailSender.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="IndianMusic.Application.csproj.Backup.tmp" />
   </ItemGroup>
 

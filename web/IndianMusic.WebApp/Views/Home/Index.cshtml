@@ -3,17 +3,10 @@
 
 @inject Microsoft.Extensions.Localization.IStringLocalizer<Labels> Localizer
 
-@{
-    ViewData["Title"] = "Indian Music - Home";
-     var feature = Context.Features.Get<IRequestCultureFeature>();
-     var culture = feature?.RequestCulture.UICulture.Name;
-}
-
-<div class="container">
-    <div class="text-left row m-1 p-2 mt-4">
+<div class="container bg-body text-body ">
+    <div class="row m-1 p-2 mt-4">
         <div class="col-lg-12">
-            <h2>@Localizer["01_Header"]</h2>
-            <h3>@Localizer["02_SubHeader"]</h3>
+            <h2>@Localizer["01_Header_1"]</h2>
         </div>
     </div>
     <div class="row g-1">
@@ -25,6 +18,16 @@
         </div>
         <div class="col-lg-5">
             @await Component.InvokeAsync("MusicOfTheDay")
+        </div>
+    </div>
+    <div class="row m-1 p-2 mt-4">
+        <div class="col-lg-12">
+            <h3>@Html.Raw(@Localizer["01_Header_2"])</h3>
+            <div class="row">
+                <div class="col-12 m-0 p-2">@Html.Raw(@Localizer["Content_Homepage_Para_1"])</div>
+                <div class="col-12 m-0 p-2">@Html.Raw(@Localizer["Content_Homepage_Para_2"])</div>
+                <div class="col-12 m-0 p-2">@Html.Raw(@Localizer["Content_Homepage_Para_3"])</div>
+            </div>
         </div>
     </div>
 </div>

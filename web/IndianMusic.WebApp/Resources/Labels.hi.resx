@@ -117,10 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="01_Header" xml:space="preserve">
-    <value>भारतीय संगीत की दुनिया में आपका स्वागत है</value>
+  <data name="01_Header_2" xml:space="preserve">
+    <value>&lt;span&gt;&lt;span class='indian'&gt;इंडियन&lt;/span&gt;&lt;span class='music'&gt;म्यूज़िक&lt;/span&gt;&lt;/span&gt; में आपका स्वागत है – एक डिजिटल जगह जहाँ भारतीय संगीत की आत्मा को हमेशा के लिए जगह मिली है</value>
   </data>
-  <data name="02_SubHeader" xml:space="preserve">
+  <data name="01_Header_1" xml:space="preserve">
     <value>संगीत के ज्ञान के खजाने में गोता लगाएँ! हिमालय से कन्याकुमारी तक की कालजयी धुनों का अनुभव करें।</value>
+  </data>
+  <data name="Content_Homepage_Para_1" xml:space="preserve">
+    <value>हर धुन, हर ताल, हर मधुर संगीत में एक कहानी छिपी होती है, जिसे सुनाने का इंतज़ार होता है। सदियों से, भारत संगीत की गहरी परंपराओं का केंद्र रहा है, जहाँ शास्त्रीय राग, भक्ति भजन, लोकगीत और आधुनिक संगीत का एक सुंदर मिश्रण है। अब कल्पना कीजिए एक ऐसी जगह जहाँ ये सभी कहानियाँ, ये सभी संगीत और इनसे जुड़ी सारी ज्ञान-दृष्टि एक साथ मिल सकें।</value>
+  </data>
+  <data name="Content_Homepage_Para_2" xml:space="preserve">
+    <value>संगीत के अलावा, हम बातचीत की शक्ति पर विश्वास करते हैं। हमारा डिस्कशन फोरम संगीत प्रेमियों, कलाकारों और विद्वानों के लिए एक जगह है जहाँ वे एक-दूसरे से जुड़ सकें, विचार साझा कर सकें और हर राग और ताल के बारे में चर्चा कर सकें। और संगीत सुनने के लिए, हमारा यूट्यूब चैनल परफॉर्मेंस और ट्यूटोरियल दिखाता है, जबकि स्पॉटिफ़ाई और साउंडक्लाउड से ऑडियो स्ट्रीम आपको भारत के संगीत में डुबो देते हैं</value>
+  </data>
+  <data name="Content_Homepage_Para_3" xml:space="preserve">
+    <value>यहाँ, हमारे लाइट थीम की हल्की रोशनी या डार्क मोड की शांति में, आप संगीत के अनूठे खजाने की दुनिया पाएंगे। संगीत से जुड़ी जानकारी का एक बड़ा संग्रह अंग्रेजी, उड़िया और हिंदी में है, ताकि हमारी विरासत की सुंदरता सभी तक पहुँच सके।</value>
   </data>
 </root>

@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = ViewBag.SubCategory != "" ? ViewBag.SubCategory : ViewBag.Category;
+}
+
+<h2>@ViewBag.Title</h2>
+
+@if (!string.IsNullOrEmpty(ViewBag.SubCategory))
+{
+    <p>Category: @ViewBag.Category</p>
+    <p>Subcategory: @ViewBag.SubCategory</p>
+}
+else
+{
+    <p>Category: @ViewBag.Category</p>
+}

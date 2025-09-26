@@ -141,8 +141,14 @@
   <data name="Menu_Classical_Music" xml:space="preserve">
     <value>Classical Music</value>
   </data>
-  <data name="Menu_Hindustani_Classical" xml:space="preserve">
-    <value>Hindustani Classical</value>
+  <data name="Menu_Music" xml:space="preserve">
+    <value>Music</value>
+  </data>
+  <data name="Menu_Classical_Hindustani" xml:space="preserve">
+    <value>Hindustani Classical Music</value>
+  </data>
+  <data name="Menu_Classical_Odissi" xml:space="preserve">
+    <value>Odissi Classical Music</value>
   </data>
   <data name="Menu_Artists" xml:space="preserve">
     <value>Artists</value>
@@ -164,9 +170,6 @@
   </data>
   <data name="Menu_Carnatic" xml:space="preserve">
     <value>Carnatic</value>
-  </data>
-  <data name="Menu_Artists" xml:space="preserve">
-    <value>Artists</value>
   </data>
   <data name="Menu_Melas" xml:space="preserve">
     <value>Melas</value>
@@ -240,7 +243,7 @@
   <data name="Menu_Instruments" xml:space="preserve">
     <value>Instruments</value>
   </data>
-  <data name="Menu_Wind_Instrument" xml:space="preserve">
+  <data name="Menu_Wind_Instruments" xml:space="preserve">
     <value>Wind Instrument</value>
   </data>
   <data name="Menu_Flute" xml:space="preserve">
@@ -264,7 +267,7 @@
   <data name="Menu_Mouth_Organ" xml:space="preserve">
     <value>Mouth Organ</value>
   </data>
-  <data name="Menu_String_Instrument" xml:space="preserve">
+  <data name="Menu_String_Instruments" xml:space="preserve">
     <value>String Instrument</value>
   </data>
   <data name="Menu_Sitar" xml:space="preserve">
@@ -315,16 +318,16 @@
   <data name="Menu_Folk_Legends" xml:space="preserve">
     <value>Folk Legends</value>
   </data>
-  <data name="Menu_Learn__Explore" xml:space="preserve">
-    <value>Learn &amp; Explore</value>
+  <data name="Menu_Learn" xml:space="preserve">
+    <value>Learn</value>
   </data>
   <data name="Menu_Music_Theory" xml:space="preserve">
     <value>Music Theory</value>
   </data>
-  <data name="Menu_Ragas__Talas" xml:space="preserve">
+  <data name="Menu_Ragas_Talas" xml:space="preserve">
     <value>Ragas &amp; Talas</value>
   </data>
-  <data name="Menu_Tutorials__Lessions" xml:space="preserve">
+  <data name="Menu_Tutorials_Lessions" xml:space="preserve">
     <value>Tutorials &amp; Lessions</value>
   </data>
   <data name="Menu_Glossary" xml:space="preserve">
@@ -337,15 +340,15 @@
     <value>Blogs</value>
   </data>
   <data name="Menu_Submit_Music" xml:space="preserve">
-    <value>Submit Music</value>
+    <value>Submit Missed Music</value>
   </data>
-  <data name="Menu_Event__Gigs" xml:space="preserve">
+  <data name="Menu_Event_Gigs" xml:space="preserve">
     <value>Event &amp; Gigs</value>
   </data>
   <data name="Menu_Interviews" xml:space="preserve">
     <value>Interviews</value>
   </data>
-  <data name="Menu_Forum_or_Discussion" xml:space="preserve">
+  <data name="Menu_Forum" xml:space="preserve">
     <value>Forum or Discussion</value>
   </data>
   <data name="Menu_About" xml:space="preserve">
@@ -362,5 +365,50 @@
   </data>
   <data name="Menu_Credits" xml:space="preserve">
     <value>Credits</value>
+  </data>
+  <data name="Menu_Classical_Carnatic" xml:space="preserve">
+    <value>Carnatic Classical Music</value>
+  </data>
+  <data name="Menu_Instrumental_Music" xml:space="preserve">
+    <value>Instrumental Music</value>
+  </data>
+  <data name="Menu_Karaoke_Music" xml:space="preserve">
+    <value>Karaoke Music</value>
+  </data>
+  <data name="Menu_Playlist" xml:space="preserve">
+    <value>Playlist</value>
+  </data>
+  <data name="Menu_Instrumental_Wind" xml:space="preserve">
+    <value>Wind Instruments</value>
+  </data>
+  <data name="Menu_Instrumental_Percussion" xml:space="preserve">
+    <value>Percussion Instruments</value>
+  </data>
+  <data name="Menu_Instrumental_String" xml:space="preserve">
+    <value>String Instruments</value>
+  </data>
+  <data name="Menu_Composers" xml:space="preserve">
+    <value>Composers</value>
+  </data>
+  <data name="Menu_Music_Directors" xml:space="preserve">
+    <value>Music Directors</value>
+  </data>
+  <data name="Menu_Instrumentalists" xml:space="preserve">
+    <value>Instrumentalists</value>
+  </data>
+  <data name="Menu_Vocalists" xml:space="preserve">
+    <value>Vocalists</value>
+  </data>
+  <data name="Menu_Playback_Singers" xml:space="preserve">
+    <value>Playback Singers</value>
+  </data>
+  <data name="Menu_Buy_or_Sale" xml:space="preserve">
+    <value>Buy or Sale</value>
+  </data>
+  <data name="Menu_Request_for_new_Music" xml:space="preserve">
+    <value>Request for new Music</value>
+  </data>
+  <data name="Menu_Dark_Theme" xml:space="preserve">
+    <value>Dark Theme</value>
   </data>
 </root>

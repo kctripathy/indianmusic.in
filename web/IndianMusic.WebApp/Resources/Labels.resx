@@ -117,10 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="01_Header" xml:space="preserve">
-    <value>Welcome to the world of Indian Music</value>
+  <data name="01_Header_2" xml:space="preserve">
+    <value>Welcome to &lt;span&gt;&lt;span class='indian'&gt;Indian&lt;/span&gt;&lt;span class='music'&gt;Music&lt;/span&gt;&lt;/span&gt; – a digital sanctuary where the soul of Indian music finds its eternal home.</value>
   </data>
-  <data name="02_SubHeader" xml:space="preserve">
-    <value>Dive into a treasure trove of musical wisdom! Experience timeless melodies from Himalaya to Kanayakumari.</value>
+  <data name="01_Header_1" xml:space="preserve">
+    <value>Dive into a treasure trove of musical wisdom! Experience timeless melodies from Hindusthan.</value>
+  </data>
+  <data name="Content_Homepage_Para_1" xml:space="preserve">
+    <value>In the heart of every melody, every rhythm, every whispered note, lies a story waiting to be told. For centuries, India has been a cradle of profound musical traditions, a vibrant tapestry woven with classical ragas, devotional bhajans, spirited folk tunes, and contemporary fusions. Yet, imagine a place where all these stories, all these sounds, and all the wisdom surrounding them could converge.</value>
+  </data>
+  <data name="Content_Homepage_Para_2" xml:space="preserve">
+    <value>Beyond the notes, we believe in the power of conversation. Our vibrant discussion forum is a space for enthusiasts, artists, and scholars to connect, share insights, and debate the nuances of every scale and rhythm. And for those visual and auditory experiences, our integrated YouTube channel brings performances and tutorials directly to you, while audio streams from Spotify and SoundCloud immerse you in the sounds of India.</value>
+  </data>
+  <data name="Content_Homepage_Para_3" xml:space="preserve">
+    <value>Here, under the gentle glow of our light theme or the serene embrace of our dark mode, you'll discover a world of unparalleled musical treasures. Dive into an extensive archive of music-related matters, meticulously curated in English, Odia, and Hindi, ensuring that the richness of our heritage is accessible to all.</value>
   </data>
 </root>

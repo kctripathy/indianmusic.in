@@ -1,0 +1,2 @@
+header-dark-mode: #404040
+header-light-mode: #F2F2F2

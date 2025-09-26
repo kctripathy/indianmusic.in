@@ -2,16 +2,99 @@
     min-height: 600px;
 }
 
-.navbar-dark {
-    border-bottom: solid 2px var(--border-color) !important;
+[data-bs-theme="light"] {
+    --bs-btn-bg: var(--highlight-color) !important;
+    --bs-btn-border-color: var(--border-color) !important;
+    --bs-btn-color: #fff !important; /* text color */
 }
 
-.dropdown-item.active {
-    background-color: var(--primary-color) !important;
+[data-bs-theme="dark"] {
+    --bs-btn-bg: red !important;
+    --bs-btn-border-color: darkred !important;
+    --bs-btn-color: #fff !important;
 }
+
+[data-bs-theme="light"] .btn-primary {
+    --bs-btn-bg: var(--highlight-color);
+    --bs-btn-border-color: var(--border-color);
+    --bs-btn-color: #fff;
+}
+
+[data-bs-theme="dark"] .btn-primary {
+    --bs-btn-bg: var(--highlight-color);
+    --bs-btn-border-color: var(--border-color);
+    --bs-btn-color: #fff;
+}
+
+.dropdown-toggle {
+    background: none !important;
+}
+
+[data-bs-theme="dark"] .dropdown-toggle {
+    color: #abb3bb !important
+}
+
+[data-bs-theme="light"] .dropdown-toggle {
+    color: var(--text-color) !important;
+}
+
+
+/*
+[data-bs-theme="light"] .dropdown-toggle {
+    background-color: red !important;
+}
+.btn-primary {
+    color: var(--highlight-color);
+    border-color: var(--border-color) !important;
+}
+
+[data-bs-theme="dark"] .btn-primary {
+    color: var(--highlight-color);
+    border-color: var(--border-color) !important;
+}
+
+[data-bs-theme="light"] .btn-primary {
+    color: var(--highlight-color);
+    border-color: var(--border-color) !important;
+}*/
+[data-bs-theme="dark"] .form-check-label {
+    color: var(--light-theme-text-color) !important;
+}
+
+[data-bs-theme="light"] .form-check-label {
+    color: var(--dark-theme-text-color) !important;
+}
+
+
+.btn-default,
+.btn-outline-success {
+    color: var(--highlight-color);
+    border-color: var(--border-color) !important;
+}
+
+    .btn-outline-success:hover {
+        color: white;
+        background-color: var(--highlight-color);
+    }
+
+
+.of-the-day-card {
+    min-height: 300px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card-body {
+    padding: .5rem 1rem;
+}
+
+.card-title {
+    margin-bottom: .2rem;
+}
+
+
 .footer {
     font-size: 0.8rem;
-    height: 30px;
+    height: 50px;
     position: fixed;
     bottom: 0px;
     width: 100%;

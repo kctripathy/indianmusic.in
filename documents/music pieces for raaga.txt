@@ -39,3 +39,58 @@ INSERT INTO MusicPieces ([Title], [Description], [RagaID]) VALUES
 -- Shankara (RagaID: 10)
 (N'Shankara Bandish', N'Morning raga classical bandish', 10),
 (N'Tum Nahi Jaoge', N'Song inspired by Raag Shankara'),
+
+
+INSERT INTO MusicPieces ([Title], [Description], [RagaID]) VALUES
+
+-- Shivaranjani (RagaID: 1)
+(N'Lagan Mori Laagi', N'Vilambit khyal bandish in Raag Shivaranjani by Acharya Vishwanath Rao Ringe', 1),
+(N'Piya Jin Maro Nainan', N'Bada khyal in Ektal set in Raag Shivaranjani', 1),
+(N'Matwaro Tanarang Chail', N'Madhya Lay Khyal in Roopak tala in Raag Shivaranjani', 1),
+(N'Naina Basi Shyam', N'Madhya Lay Khyal in Jhaptal in Raag Shivaranjani themed on Shri Krishna', 1),
+(N'Rangili Tori Ankhiyan', N'Chota Khyal in Trital Drut, expressing Shringar Ras', 1),
+
+-- Bhimpalasi (RagaID: 2)
+(N'Pat Deve Ram Sharan', N'Famous Bandish in Raag Bhimpalasi by Pt. Jasraj', 2),
+(N'Piya Bin Nahi Aavat Chain', N'Popular thumri in Bhimpalasi', 2),
+(N'Mori Main Nahin Maakhan Khayo', N'Bandish depicting Krishna in Raag Bhimpalasi', 2),
+(N'Jhanak Jhanak Tari Baje Payaliya', N'Dhamar bandish in Raag Bhimpalasi', 2),
+(N'Kaun Gali Gayo Shyam', N'Semi-classical piece in Raag Bhimpalasi', 2),
+
+-- Bhairavi (RagaID: 3)
+(N'Bhairavi Thumri Bandish', N'Traditional thumri bandish in Raag Bhairavi', 3),
+(N'Poochho Na Kaise Maine', N'Famous song from Meri Surat Teri Ankhen', 3),
+(N'Kaun Siya Se', N'Deep emotional bandish in Raag Bhairavi', 3),
+(N'Bin Tere Kya Hai Jeevan', N'Light classical song sung by Shamshad Begum', 3),
+(N'Deepak Jalao Jyoti', N'Spiritual bhajan in Raag Bhairavi', 3),
+
+-- Jog (RagaID: 4)
+(N'Jog Alap and Bandish', N'Traditional gat in Teental in Raag Jog', 4),
+(N'Jhoole Mein Pawan Ki Aayi Bahar', N'Film song from Mughal-e-Azam inspired by Raag Jog', 4),
+(N'Poonam Ki Chandani', N'Popular Khayal bandish in Raag Jog', 4),
+(N'Nigahen Milake', N'Semi-classical bandish in Raag Jog', 4),
+(N'Raat Piya Ke Sang', N'Expressive composition in Raag Jog', 4);
+
+
+INSERT INTO MusicPieces ([Title], [MovieName], [MovieReleaseYear],[ComposersName], [SingersName],[LyricistName]) VALUES
+
+
+INSERT INTO MusicPieces ([Title], [MovieName], [MovieReleaseYear], [ComposersName], [SingersName], [LyricistName]) VALUES
+(N'Khilte Hai Gul Yahan', N'Kati Patang', 1970, N'Laxmikant-Pyarelal', N'Mohammed Rafi', N'Anand Bakshi'),
+(N'Chandan Sa Badan', N'Sushaagan', 1973, N'Laxmikant-Pyarelal', N'Mohammed Rafi', N'Majrooh Sultanpuri'),
+(N'O Saamne Kuch Ajeeb Tha', N'Jimmy', 1979, N'R.D. Burman', N'Asha Bhosle', N'Anand Bakshi'),
+(N'Satyam Shivam Sundaram', N'Satyam Shivam Sundaram', 1978, N'Laxmikant-Pyarelal', N'Lata Mangeshkar', N'Panchhi Jalonvi'),
+(N'Fero Na Nazar Se Nazariya', N'Tumse Achcha Kaun Hai', 1969, N'S.D. Burman', N'Mohammed Rafi', N'Gopaldas Neeraj'),
+(N'Kisi Rah Mein Kisi Mod Par', N'Dil To Pagal Hai', 1997, N'Shreya Ghoshal, Udit Narayan', N'Lata Mangeshkar, Udit Narayan', N'Javed Akhtar'),
+(N'Chupke Chupke Raat Din', N'Chupke Chupke', 1975, N'S.D. Burman', N'Ghulam Ali', N'Majrooh Sultanpuri'),
+(N'Pal Pal Dil Ke Paas', N'CINEMA DIL KE | Blackmail', 1973, N'Kalyanji-Anandji', N'Kishore Kumar', N'Sharad Joshi'),
+(N'Surmayee Aankhon Mein', N'Maryada', 1989, N'Anu Malik', N'Suresh Wadkar', N'Rani Malik'),
+(N'Shyam Tere Bansi Pukare Radha Naam', N'Radha Krishna', 1971, N'Anil Biswas', N'Mukesh', N'Qamar Jalalabadi'),
+(N'Ghungroo Ki Tarah', N'Kaho Naa... Pyaar Hai', 2000, N'Rajesh Roshan', N'Udit Narayan, Alka Yagnik', N'Faaiz Anwar'),
+(N'Ek Pyar Ka Nagma Hai', N'Shor', 1972, N'Laxmikant-Pyarelal', N'Mohammed Rafi, Lata Mangeshkar', N'Santosh Anand'),
+(N'Ek Radha Ek Meera', N'Ek Radha Ek Meera', 1971, N'S.N. Tripathi', N'Mohammed Rafi, Lata Mangeshkar', N'Rawat Harvansh Singh'),
+(N'Ram Teri Ganga Maili Ho Gayi', N'Ram Teri Ganga Maili', 1985, N'S. D. Burman', N'Sagarika Mukherjee', N'Hasrat Jaipuri'),
+(N'Tu Jahan Jahan Chalega Tera Saya Saath Hoga', N'Maina', 1993, N'Mohammed Zahur Khayyam', N'Kishore Kumar', N'Sahir Ludhianvi'),
+(N'Dil Hoon Tumhaara', N'Pyar To Hona Hi Tha', 1998, N'Anu Malik', N'Kumar Sanu', N'Javed Akhtar');
+
+

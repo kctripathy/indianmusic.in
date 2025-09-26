@@ -28,7 +28,8 @@ namespace IndianMusic.WebApp.Extensions
             {
                 options.Password.RequireDigit = true;
                 options.Password.RequiredLength = 6;
-                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireNonAlphanumeric = true;
+                options.SignIn.RequireConfirmedEmail = true; //This tells Identity to generate a confirmation token and prevent unconfirmed users from logging in. The default ASP.NET Core Identity scaffolded pages handle the token generation and link creation, but you need to provide the actual email sending mechanism.
             })
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();

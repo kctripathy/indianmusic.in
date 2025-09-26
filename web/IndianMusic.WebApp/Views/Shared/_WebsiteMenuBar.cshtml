@@ -1,0 +1,227 @@
+﻿@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject Microsoft.Extensions.Localization.IStringLocalizer<MenuItems> Localizer
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Menu - 1 : Classical Music-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                @Localizer["Menu_Classical_Music"]
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+
+                <!-- Submenu -->
+                <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">@Localizer["Menu_Hindustani_Classical"]</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" asp-area='' asp-controller='HindustaniClassical' asp-action='Artists'>@Localizer["Menu_Artists"]</a> </li>
+                        <li class="dropdown-menu-divider" />
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Classical' asp-action='Thats'>@Localizer["Menu_Thats"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Classical' asp-action='Ragas'>@Localizer["Menu_Ragas"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Classical' asp-action='Talas'>@Localizer["Menu_Talas"]</a></li>
+
+                        <li class="dropdown-menu-divider" />
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Classical' asp-action='Instumentals'>@Localizer["Menu_Instumentals"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Classical' asp-action='Compositions' title="Khayals, Dhurpads, etc.">@Localizer["Menu_Compositions"]</a></li>
+
+                        <!-- Sub-Submenu
+                        <li class="dropdown-submenu d-none">
+                            <a class="dropdown-item dropdown-toggle" href="#">More Options</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Top Artists</a></li>
+                                <li><a class="dropdown-item" href="#">Upcoming</a></li>
+                            </ul>
+                        </li>
+                        -->
+                    </ul>
+                </li>
+
+                <!-- Another Submenu -->
+                <li class="dropdown-submenu d-none">
+                    <a class="dropdown-item dropdown-toggle" href="#">@Localizer["Menu_Carnatic"]</a>
+                    <ul class="dropdown-menu">
+
+                        <li><a class="dropdown-item" href="#">Add Raaga</a></li>
+                        <li><a class="dropdown-item" href="#">View Raagas</a></li>
+                    </ul>
+                </li>
+
+                <!-- Another Submenu -->
+                <li class="dropdown-submenu d-none">
+                    <a class="dropdown-item dropdown-toggle" href="#">Odissi Classical</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Add Raaga</a></li>
+                        <li><a class="dropdown-item" href="#">View Raagas</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+
+        <!-- Menu - 2 : Folk Music-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                @Localizer["Menu_Folk_Music"]
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+
+                <!-- Submenu -->
+                <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">@Localizer["Menu_Odisha"] </a>
+                    <ul class="dropdown-menu">
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Odisha'>@Localizer["Menu_Prahallada_Nataka"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Odisha'>@Localizer["Menu_Radha_Prema_Leela"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Odisha'>@Localizer["Menu_Bharata_Leela"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Odisha'>@Localizer["Menu_Ghoda_Nacha"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Odisha'>@Localizer["Menu_Pasu_Mukha_Nacha"]</a></li>
+                    </ul>
+                </li>
+
+                <!-- Another Submenu -->
+                <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">@Localizer["Menu_Bengal"]</a>
+                    <ul class="dropdown-menu">
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Bengal'>Bengal Folk - 41</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Bengal'>Bengal Folk - 42</a></li>
+                    </ul>
+                </li>
+
+                <!-- Another Submenu -->
+                <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">@Localizer["Menu_Assam"]</a>
+                    <ul class="dropdown-menu">
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Assam'>Assam Folk - 44</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Folk' asp-action='Assam'>Assam Folk - 45</a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+
+        <!-- Menu - 3 : Film-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                @Localizer["Menu_Film_Music"]
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                <li><a class='dropdown-item' asp-area='' asp-controller='Film' asp-action='Bollywood'>@Localizer["Menu_Bollywood"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='Film' asp-action='Ollywood'>@Localizer["Menu_Ollywood"]</a></li>
+            </ul>
+        </li>
+
+        <!-- Menu - 4 : Instruments-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                @Localizer["Menu_Instruments"]
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+
+                <!-- Submenu -->
+                <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">@Localizer["Menu_Wind_Instrument"]</a>
+                    <ul class="dropdown-menu">
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Flute"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Shehnai"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Saxopnone"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Mukhabina"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Nada_Venu"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Trumpet"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Mouth_Organ"]</a></li>
+                    </ul>
+                </li>
+
+                <!-- Another Submenu -->
+                <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">@Localizer["Menu_String_Instrument"]</a>
+                    <ul class="dropdown-menu">
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Sitar"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Violine"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Sarod"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Guitar"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Tanpura"]</a></li>
+
+                    </ul>
+                </li>
+
+                <!-- Another Submenu -->
+                <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">@Localizer["Menu_Percussion_Instruments"]</a>
+                    <ul class="dropdown-menu">
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Tabla"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Drum"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Mardhal"]</a></li>
+                        <li><a class='dropdown-item' asp-area='' asp-controller='Instruments' asp-action=''>@Localizer["Menu_Pakhawuj"]</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+
+        <!-- Menu - 5 : Artists-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                @Localizer["Menu_Artists__Legends"]
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Vocalist"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Instrumentalist"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Composer"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Lyricists"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Folk_Legends"]</a></li>
+
+            </ul>
+        </li>
+
+        <!-- Menu - 5 : Learn-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                @Localizer["Menu_Learn__Explore"]
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Music_Theory"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Ragas__Talas"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Tutorials__Lessions"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Glossary"]</a></li>
+            </ul>
+        </li>
+
+        <!-- Menu - 6 : Learn-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                @Localizer["Menu_Community"]
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Blogs"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Submit_Music"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Event__Gigs"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Interviews"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Forum_or_Discussion"]</a></li>
+            </ul>
+        </li>
+
+        <!-- Menu - 6 : About-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                @Localizer["Menu_About"]
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_About_us"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Contact"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Contributors"]</a></li>
+                <li><a class='dropdown-item' asp-area='' asp-controller='' asp-action=''>@Localizer["Menu_Credits"]</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link disabled">Shop</a>
+        </li>
+    </ul>
+    <partial name="_LoginPartial" />
+    <partial name="_YouTubeSubscriptionButton" />
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="themeToggleBtn">
+        <label class="form-check-label" for="themeToggleBtn">Dark</label>
+    </div>
+</div>
