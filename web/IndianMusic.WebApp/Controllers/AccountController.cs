@@ -118,6 +118,36 @@ namespace IndianMusic.WebApp.Controllers
             return View();
         }
 
+
+        [HttpGet]
+        public async Task<IActionResult> ConfirmEmail(string userId, string token)
+        {
+            if (userId == null || token == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return NotFound($"User with ID '{userId}' not found.");
+            }
+
+            var result = await _userManager.ConfirmEmailAsync(user, token);
+            
+            ViewBag.IsEmailConfirmed = (bool) result.Succeeded;
+
+            if (result.Succeeded)
+            {
+                return View("ConfirmEmail"); // Renders ConfirmEmail.cshtml
+            }
+            else
+            {
+                return View("ConfirmEmail"); // Optional error view
+            }
+        }
+
+
         // ==========================
         // LOGOUT
         // ==========================

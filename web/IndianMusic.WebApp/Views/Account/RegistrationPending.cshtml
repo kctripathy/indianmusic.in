@@ -1,0 +1,14 @@
+﻿@model ApplicationUser
+
+@{
+    ViewData["Title"] = "Registration Pending";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thanks for registering, @Model.DisplayName!</h2>
+
+<p>
+    We’ve sent a confirmation email to <strong>@Model.Email</strong>.
+    <br />
+    Please check your inbox and click the confirmation link to activate your account.
+</p>

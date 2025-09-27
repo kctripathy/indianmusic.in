@@ -19,6 +19,12 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="_insert music.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SUVRAM\SQLEXPRESS_2022:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>_insert music.sql</FullPath>
+        </FileNode>
         <FileNode Name="001_create_db_n_tables.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SUVRAM\SQLEXPRESS_2022:False:sa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
@@ -78,12 +84,6 @@
           <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>get-all-categories.sql</FullPath>
-        </FileNode>
-        <FileNode Name="SQLQuery2.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SUVRAM\SQLEXPRESS_2022:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>SUVRAM\SQLEXPRESS_2022</AssociatedConnSrvName>
-          <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>SQLQuery2.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Email Confirmed";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // or whatever layout you use
+}
+
+@if (ViewBag.IsEmailConfirmed)
+{
+    <h2>Email Confirmed</h2>
+
+    <div class="alert alert-success">
+        Your email address has been successfully confirmed. 🎉
+    </div>
+
+    <p>You can now <a asp-controller="Account" asp-action="Login">log in</a> to your account.</p>
+}
+else
+{
+    <h2>Sorry! We can't confirm the email!</h2>
+
+    <div class="alert alert-danger">
+        Please  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@IndianMusic.in&su=EmailNotConfirmed" target="_blank">click here</a> to send an email to Indian Music Support Team.
+    </div>
+}

@@ -1,0 +1,28 @@
+﻿@model List<UserWithRolesViewModel>
+
+<h2>Users</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Roles</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Email</td>
+                <td>@user.UserName</td>
+                <td>@string.Join(", ", user.Roles)</td>
+                <td>
+                    <a asp-area="Admin" asp-controller="Users" asp-action="Edit" asp-route-id="@user.UserId" class="btn btn-sm btn-primary">Edit</a>
+                    <a asp-area="Admin" asp-controller="Users" asp-action="Delete" asp-route-id="@user.UserId" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?')">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
