@@ -1,14 +1,15 @@
 ﻿using IndianMusic.Application.Services;
+using IndianMusic.Domain.Models;
 using IndianMusic.WebApp.Data;
 using IndianMusic.WebApp.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authentication.Facebook;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using System.Globalization;
-using IndianMusic.Domain.Models;
 
 namespace IndianMusic.WebApp.Extensions
 {
@@ -21,6 +22,17 @@ namespace IndianMusic.WebApp.Extensions
             services.AddDbContext<IndianMusicDbContext>(options => options.UseSqlServer(connectionString));
             return services;
         }
+
+        //LoggerConfiguration
+        //public static IServiceCollection AddLoggerConfiguration)
+        //{
+        //    // Configure Serilog
+        //    Log.Logger = new LoggerConfiguration()
+        //        .WriteTo.Console()
+        //        .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
+        //        .Enrich.FromLogContext()
+        //        .CreateLogger();
+        //}
 
         public static IServiceCollection AddApplicationIdentity(this IServiceCollection services)
         {

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OutputCaching;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Localization;
+using Serilog;
 using System.Diagnostics;
 
 namespace IndianMusic.WebApp.Controllers
@@ -46,16 +47,22 @@ namespace IndianMusic.WebApp.Controllers
         {
             var feature = HttpContext.Features.Get<IExceptionHandlerPathFeature>();
 
-            ViewBag.ExceptionPath = feature?.Path;
-            ViewBag.ExceptionMessage = feature?.Error.Message;
-            ViewBag.StackTrace = feature?.Error.StackTrace;
+            if (feature != null)
+            {
+                // Log with Serilog
+                Log.Error(feature.Error, "Unhandled exception at {Path}", feature.Path);
 
+                ViewBag.ExceptionPath = feature.Path;
+                ViewBag.ExceptionMessage = feature.Error.Message;
+                ViewBag.StackTrace = feature.Error.StackTrace;
+            }
             return View();
         }
 
         // Handles specific status codes (404, 500, etc.)
         public IActionResult StatusCode(int code)
         {
+            Log.Information("HTTP {StatusCode} returned for path {Path}", code, HttpContext.Request.Path);
             ViewBag.Code = code;
             return View();
         }
