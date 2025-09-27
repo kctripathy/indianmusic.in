@@ -1,12 +1,8 @@
-using IndianMusic.Domain.Models;
-using IndianMusic.WebApp.Models;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.OutputCaching;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Localization;
 using Serilog;
-using System.Diagnostics;
 
 namespace IndianMusic.WebApp.Controllers
 {
@@ -16,10 +12,16 @@ namespace IndianMusic.WebApp.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IStringLocalizer<Labels> _localizer;
         private readonly IMemoryCache _cache;
+        private readonly IEmailSenderFromApp _emailsender;
 
-        public HomeController(ILogger<HomeController> logger, IndianMusicDbContext context, IStringLocalizer<Labels> localizer, IMemoryCache cache)
+        public HomeController(ILogger<HomeController> logger,
+                               IEmailSenderFromApp emailSender,
+                                IndianMusicDbContext context, 
+                                IStringLocalizer<Labels> localizer, 
+                                IMemoryCache cache)
         {
             _logger = logger;
+            _emailsender = emailSender;
             _context = context;
             _localizer = localizer;
             _cache = cache;
@@ -72,5 +74,22 @@ namespace IndianMusic.WebApp.Controllers
         {
             throw new Exception("Test exception from CauseError action.");
         }
+
+        [HttpPost]
+        public async Task<IActionResult> SendTestEmail()
+        {
+            try
+            {
+                bool result = await _emailsender.SendEmailGoogleAsync("kctripathy@gmail.com", "Test ", "test");
+                throw new Exception(result.ToString());
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.ToString());
+            }
+        
+        }
+
     }
 }

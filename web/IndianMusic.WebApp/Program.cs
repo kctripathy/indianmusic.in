@@ -25,6 +25,7 @@ namespace IndianMusic.WebApp
                 builder.Services.AddAuthorization();
                 builder.Services.AddApplicationTranslation(builder);
                 builder.Services.AddRepositories();
+                builder.Services.AddApplicationServices();
 
                 var app = builder.Build();
                 app.UseLocalization();

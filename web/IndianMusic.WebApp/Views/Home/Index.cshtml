@@ -32,7 +32,10 @@
         <div class="col-lg-12">
             <!-- A button to throw error for testing -->
             <form asp-controller="Home" asp-action="CauseError" method="post">
-                <button type="submit">Cause an Error</button>
+                <button class="btn btn-primary d-inline float-end" type="submit">Cause an Error</button>
+            </form>
+            <form asp-controller="Home" asp-action="SendTestEmail" method="post">
+                <button class="btn btn-primary d-inline float-end" type="submit">Send Test Email</button>
             </form>
         </div>
     </div>

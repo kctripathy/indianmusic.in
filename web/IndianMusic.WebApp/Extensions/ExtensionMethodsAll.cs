@@ -1,14 +1,10 @@
 ﻿using IndianMusic.Application.Services;
-using IndianMusic.Domain.Models;
 using IndianMusic.WebApp.Data;
 using IndianMusic.WebApp.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.Facebook;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
-using Serilog;
 using System.Globalization;
 
 namespace IndianMusic.WebApp.Extensions
