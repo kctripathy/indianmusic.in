@@ -419,3 +419,9 @@ FodyWeavers.xsd
 /App_Password_Gmail.txt
 /web/IndianMusic.WebApp/appsettings.Development.json
 /web/IndianMusic.WebApp/appsettings.json
+/db/scripts/IndianMusicSQLServerScripts/IndianMusicSQLServerScripts/SQLQuery1.sql
+/db/scripts/IndianMusicSQLServerScripts/IndianMusicSQLServerScripts/SQLQuery2.sql
+/db/scripts/IndianMusicSQLServerScripts/IndianMusicSQLServerScripts/SQLQuery3.sql
+/documents/how-to-send-email-using-hostCoIn-smtp.txt
+/documents/how-to-send-emails.txt
+/documents/work-book-notes/2025-SEP-29.txt
