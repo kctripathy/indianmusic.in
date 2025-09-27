@@ -8,12 +8,15 @@
     --secondary-color: #FFF8DC; /*Gold (#FFD700) or Cream (#FFF8DC)*/
     --tertiary-color: #180f13;
     --background-color: #FAF9F6; /*Background: Off-white (#FAF9F6) or Warm Beige (#F5F5DC) */
-    --text-color: #2C2C2C;      /*Charcoal Black (#2C2C2C)*/
-    --border-color: #FF4081;    /* neon pink*/ /*#db005e;*/
+    --text-color: #2C2C2C; /*Charcoal Black (#2C2C2C)*/
+    --border-color: #FF4081; /* neon pink*/ /*#db005e;*/
     --danger-color: red;
     --highlight-color: #63052e;
     --dark-theme-text-color: black;
     --light-theme-text-color: white;
+    --dark-theme-back-color: white;
+    --light-theme-back-color: #212529; /* var(--bs-body-bg);;  #9b0035*/
+    --btn-border-color: #9b0035;
 }
 
 .quote-title {

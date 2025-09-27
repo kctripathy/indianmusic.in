@@ -29,5 +29,11 @@
                 <div class="col-12 m-0 p-2">@Html.Raw(@Localizer["Content_Homepage_Para_3"])</div>
             </div>
         </div>
+        <div class="col-lg-12">
+            <!-- A button to throw error for testing -->
+            <form asp-controller="Home" asp-action="CauseError" method="post">
+                <button type="submit">Cause an Error</button>
+            </form>
+        </div>
     </div>
 </div>

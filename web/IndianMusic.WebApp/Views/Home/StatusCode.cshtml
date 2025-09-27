@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Error";
+    var code = ViewBag.Code as int?;
+}
+
+<h2>Error Code: @code</h2>
+
+@if (code == 404)
+{
+    <p>The page you are looking for was not found.</p>
+}
+else if (code == 500)
+{
+    <p>Something went wrong on the server.</p>
+}
+else
+{
+    <p>An unexpected error occurred.</p>
+}

@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Error";
+}
+
+<h2>Oops! Something went wrong.</h2>
+
+<p><strong>Path:</strong> @ViewBag.ExceptionPath</p>
+<p><strong>Message:</strong> @ViewBag.ExceptionMessage</p>
+
+<!-- In Production, hide stack trace -->
+@if (Context.RequestServices.GetService<IWebHostEnvironment>()!.IsDevelopment())
+{
+    <pre>@ViewBag.StackTrace</pre>
+}
