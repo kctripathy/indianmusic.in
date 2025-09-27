@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace IndianMusic.Application
 {
-    public interface IEmailSenderFromApp
+    public interface IEmailSenderFromApp: IEmailSender
     {
         Task<bool> SendEmailGoogleAsync(string toEmail, string subject, string body);
     }
