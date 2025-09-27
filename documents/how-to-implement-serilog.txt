@@ -86,7 +86,16 @@ namespace YourAppNamespace.Controllers
 }
 
 
+###################
+How this works
 
+Any unhandled exception goes through UseExceptionHandler("/Home/Error").
+
+HttpContext.Features.Get<IExceptionHandlerPathFeature>() gives you the exception + path.
+
+Log.Error() records it in Serilog (console, file, etc.).
+
+Status codes (404, 500) also get logged with Log.Warning().
 
 
 
