@@ -13,14 +13,17 @@ namespace IndianMusic.WebApp.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        public readonly IEmailSenderFromApp _emailsender;
 
         public AccountController(UserManager<ApplicationUser> userManager,
                                  SignInManager<ApplicationUser> signInManager,
-                                 RoleManager<IdentityRole> roleManager)
+                                 RoleManager<IdentityRole> roleManager,
+                                 IEmailSenderFromApp emailsender)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
+            _emailsender = emailsender;
         }
 
         // ==========================
@@ -94,8 +97,18 @@ namespace IndianMusic.WebApp.Controllers
                     // Assign default role
                     await _userManager.AddToRoleAsync(user, "User");
 
-                    await _signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Index", "Home");
+                    var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+
+                    var confirmationLink = Url.Action("ConfirmEmail", "Account",
+                        new { userId = user.Id, token = token }, Request.Scheme);
+
+                    // TODO: send email using Gmail API helper here
+                    await _emailsender.SendEmailAsync (user.DisplayName, user.Email, "Confirm your email", $"Please confirm your account by clicking this link: {confirmationLink}");
+
+                    return View("RegistrationPending", user); // tell user to check email
+                                                        // Commented because user can sign only after confirmation
+                                                        // await _signInManager.SignInAsync(user, isPersistent: false);
+                                                        // return RedirectToAction("Index", "Home");
                 }
 
                 foreach (var error in result.Errors)

@@ -1,6 +1,7 @@
 ﻿using IndianMusic.WebApp.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using IndianMusic.Domain.Models;
 
 namespace IndianMusic.WebApp.Data
 {
@@ -10,5 +11,6 @@ namespace IndianMusic.WebApp.Data
             : base(options)
         {
         }
+        public DbSet<IndianMusic.Domain.Models.AspNetUser> AspNetUser { get; set; } = default!;
     }
 }

@@ -417,3 +417,5 @@ FodyWeavers.xsd
 *.msm
 *.msp
 /App_Password_Gmail.txt
+/web/IndianMusic.WebApp/appsettings.Development.json
+/web/IndianMusic.WebApp/appsettings.json

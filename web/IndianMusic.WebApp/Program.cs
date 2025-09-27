@@ -1,5 +1,8 @@
 using IndianMusic.WebApp.Extensions;
 using Serilog;
+using IndianMusic.WebApp.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace IndianMusic.WebApp
 {
@@ -47,7 +50,7 @@ namespace IndianMusic.WebApp
             {
                 Log.CloseAndFlush();
             }
-
+           
         }
     }
 

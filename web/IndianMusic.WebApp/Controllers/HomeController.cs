@@ -80,8 +80,19 @@ namespace IndianMusic.WebApp.Controllers
         {
             try
             {
-                bool result = await _emailsender.SendEmailGoogleAsync("kctripathy@gmail.com", "Test ", "test");
-                throw new Exception(result.ToString());
+                User user = new User
+                {
+                    Name = "Kishor",
+                    Email = "kctripathy@gmail.com"
+                };
+
+                //bool result = await _emailsender.SendEmailGoogleAsync("kctripathy@gmail.com", "Test ", "test");
+
+                bool result = await _emailsender.SendEmailAsync(user.Name, user.Email, "Test subject", "test body");
+
+                @ViewBag.Result = result;
+                return View("ConfirmationMessage");
+                //throw new Exception(result.ToString());
             }
             catch (Exception ex)
             {

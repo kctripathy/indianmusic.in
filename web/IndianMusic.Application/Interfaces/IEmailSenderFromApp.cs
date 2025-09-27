@@ -10,5 +10,7 @@ namespace IndianMusic.Application
     public interface IEmailSenderFromApp: IEmailSender
     {
         Task<bool> SendEmailGoogleAsync(string toEmail, string subject, string body);
+
+        Task<bool> SendEmailAsync(string toName, string toEmail, string subject, string body);
     }
 }
